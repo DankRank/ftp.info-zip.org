@@ -1,0 +1,64 @@
+/*
+ *  unzip - Version 5.31 (31/05/1997)
+ *  Ported by Neil Harvey & Associates (http://nha.co.za/)
+ *  September 1997
+ *
+ */
+
+*** Description
+
+UnZip is an extraction utility for archives compressed in .zip format (also
+called "zipfiles").  Although highly compatible both with PKWARE's PKZIP
+and PKUNZIP utilities for MS-DOS and with Info-ZIP's own Zip program, our
+primary objectives have been portability and non-MSDOS functionality.
+
+*** Download
+
+ftp://ftp.nha.co.za/hp3000/unzip/
+				
+  Size:        Name            Description
+  -------      -------------   ------------------
+  523,929      unzip.m.Z       compressed mover archive (binaries/documentation)
+  365,961      unzip.m.gz      gzip'ed mover archive (binaries/documentation)
+  458,519      unzip.tar.Z     compressed tar archive (binaries/documentation)
+  340,756      unzip.tar.gz    gzip'ed tar archive (binaries/documentation)
+
+  777,070      unzip.source.tar.gz 
+
+
+*** Installation
+
+  1)  transfer the archive to your hp3000 (ftp, samba, reflection)
+  2)  uncompress the archive (uncompress, gzip)
+  3)  extract the archive (mover, tar)
+
+  *** NOTE ***
+  i)   The archive contains absolute file names, if this is not what you want
+       you are on your own.
+  ii)  All the binaries have been linked to hpbin.sys.
+       eg:  unzip.hpbin.sys = /usr/local/bin/unzip
+  iiI) read the documentaion in /usr/local/doc/unzip
+
+
+*** Configuration
+
+  1)  modify your PATH variable to include /usr/local/bin
+  2)  modify your MANPATH variable to include /usr/local/man
+
+  *** NOTE ***
+  i)  Both of these variables can be modified in /etc/profile.
+  ii) The default /etc/profile does not include a MANPATH variable.
+      To correctly add the variable add the following line
+        MANPATH=/usr/man:/usr/local/man
+        export MANPATH
+
+
+*** Testing
+
+  1)  unzip -t /usr/local/doc/unzip/test.zip
+
+Have fun and good luck,
+
+Jens von Bulow
+jens@nha.co.za
+

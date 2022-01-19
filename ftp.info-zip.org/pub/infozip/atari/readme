@@ -1,0 +1,18 @@
+This directory contains executables for Atari TOS.
+
+   864 Feb 22 2004  README         what you're reading right now
+155050 Feb 11 1994  unzip51b.tos   UnZip 5.1 exes & docs, self-extr. archive
+151986 Feb 11 1994  unzip51b.zoo   UnZip 5.1 exes & docs, Zoo 2.1 format
+
+The self-extracting archive was created with Vincent Pomey's ZIP2TOS.
+Each archive contains executables built with GNU C 2.5.8 and the MiNT
+library (patchlevel 41).  They will work fine with MiNT or regular TOS
+(and probably things like Mag!x and Geneva) and there are 68020-and-up
+optimized binaries for people with TTs, Falcons or accelerated STs.
+
+All Info-ZIP packages contain documentation.  The sources are in ../src .
+
+Send Atari questions to Chris Herborth:    chrish@qnx.com
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  25 January 1997

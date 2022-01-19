@@ -1,0 +1,16 @@
+gzip has been ported to the Mac by Jose Gutierrez <MacSPD@ivo.cps.unizar.es>
+as MacGzip. I do not maintain MacGzip myself, so please report problems
+with MacGzip to Jose Gutierrez, unless the problem is generic and
+can be reproduced with gzip on other systems. MacGzip is available by ftp
+in mac.archive.umich.edu:/mac/util/compression/macgzip*.cpt.hqx.
+(The current version as of 15 September 1994 is macgzip0.22.cpt.hqx
+but there might be a new version, please check.)
+
+Jean-loup Gailly
+
+
+The current version as of 7 June 1998 seems to be 1.0b0; it is available
+from ftp://wuarchive.wustl.edu/systems/mac/umich.edu/util/compression/ .
+(The archive is dated 7 October 1995.)
+
+G. Roelofs

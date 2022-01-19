@@ -1,0 +1,18 @@
+This directory contains executables for FreeBSD (Intel x86-32 and AMD x86-64
+only).
+
+   973 Mar 26 2005  README             what you're reading right now
+182681 Mar 26 2005  unz552x-x64.tar.gz UnZip 5.52 x86-64 docs/exes, gzip'd tar
+190582 Mar 26 2005  unz552x-x64.zip    UnZip 5.52 x86-64 docs/exes, zipfile
+151552 Mar 26 2005  unz552x.tar.gz     UnZip 5.52 x86-32 docs/exes, gzip'd tar
+160001 Mar 26 2005  unz552x.zip        UnZip 5.52 x86-32 docs/exes, zipfile
+141336 Mar 26 2005  zip231x-x64.tar.gz Zip 2.31 x86-64 exes/docs (w/encryption)
+143097 Mar 26 2005  zip231x-x64.zip    Zip 2.31 x86-64 exes/docs (w/encryption)
+111620 Mar 26 2005  zip231x.tar.gz     Zip 2.31 x86-32 exes/docs (w/encryption)
+116732 Mar 26 2005  zip231x.zip        Zip 2.31 x86-32 exes/docs (w/encryption)
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  26 March 2005

@@ -1,0 +1,117 @@
+Harald Denker <harald_denker@ms.maus.de> has ported gzip 1.2.3 to MVS.
+The executable is in gzip123-mvs.exe, the sources are in gzip123-mvs.zip.
+
+MVS gzip is interoperable with other ASCII-platforms; it supports
+ASCII-EBCDIC conversion.
+
+For example, assume  foo.txt is an ASCII text-file:
+
+           gzip on a PC	                            gzip on mainframe
+           ============                             =================
+
+    foo.txt -----------> foo.gz --------------->foo.gz ------------>foo
+             gzip foo		send as binary to host    gzip -ad foo.gz
+                                without conversion
+
+and foo.txt <----------  foo.gz <-------------- foo.gz <----------- foo
+             gzip -d foo                                gzip -a foo
+
+
+On the mainframe the meaning of the -a flag is:
+
+- gzip:   convert ebcdic to ascii before compression
+- gunzip: convert ascii to ebcdic after decompression
+
+The original filename is saved in ascii, as required by the gzip
+specification.
+
+You can use the file go_gzip to run gzip as a JES-batch Job.
+
+There is still some work to be done on the filetype of the file
+created by gzip -d.
+
+For questions about gzip on MVS, contact Harald Denker
+<harald_denker@ms.maus.de> or <harry@hal.westfalen.de> directly.
+
+The rest of this file is needed only if you intend to recompile gzip
+from source.
+
+==============================================================================
+
+This is a small 'readme' for all those guys trying to port gzip to an IBM
+mainframe running under MVS or VM/CMS and using the IBM C/370 compiler.
+
+The first thing is to get (a little bit) familiar with your C/370.
+Get the manuals "IBM C/370 User's Guide" and the "Common Programming Interface
+C Reference". 
+
+Please check if your TSO-session accepts the C/370 code point mappings, that
+is: do the chars (especially { } [ ] \...) typed in by TSO-edit have the same
+hex-values as expected by the 'code point mappings' (App. E in the Users' Guide').
+If not please use the scanner.c source provided in this folder to get the
+changes done, of course accustom the source if necessary.
+
+Contents:
+
+- c370.h and c370.c: this is a small interface for the C/370-library providing
+    some Unix-like header-files, in this case there are stat.h, dirent.h (for
+    partitioned datasets), io.h,...  
+    feel free to complete this stuff - and let me know what you've done.	
+    generally replace #include-statements in sources like
+    #include <sys/stat> by #include "c370.h"  
+    or something like that. 
+    
+- patches: patches relative to the gzip 1.2.3 sources. It should be relatively
+  easy to adapt them for newer versions of gzip.
+
+- hdcc: that's a JES-procedure for compiling C-sources. As you can see the
+    'scanner' is invoked. Please omit if you don't need that.
+    
+- make_gzp: that is a JES-Job containing a complete make of all sources
+    needed for gzip. As far as you know there is no unix-like 'make'
+    available for C/370...  :-(  But the C/370 compiler is VERY fast (cause
+    of the FAST hardware...) it doesn't matter if you compile the whole
+    stuff again (or not).
+    Of course you have to adapt the DSNames of this job, eg: replace my
+    userid (IE23218) with yours and check them very closely.
+    
+- scanner.c: that's a small C-source used for replacements for hex-values
+    of C-sources as I described some lines before. It is easy to adapt to
+    other (TSO-environments) but at least I don't hope that you'll need
+    this stuff
+    
+- go_gzip: you can start C370-Programs as a JES-batch Job. Please see the file
+    'go_gzip' for further information. And you can start C-programs as TSO
+    foreground applications, please enter  call 'userid.loadmod(member)'
+    as a TSO command. see the User's guide for more info
+    
+    
+General remarks for porting C-sources:
+of course you can try to port other sources to the IBM mainframe. 
+Things to check are
+
+- ASCII-EBCDIC stuff: replace char-comparisons like (ch < ' ') or
+    ('A' <= ch && ch <= 'Z') by functions provided with  <ctype.h>
+    like tolower(), toupper(), isprint(), isdigit(),....
+    that's vital!!!!
+    also check for constant hex-chars like \007, \012,... and replace
+    with \a, \n, \b,... and so on. 
+    
+- check #include's: hint: make a global compiler-define  #define C370
+    and replace #inlcude <abc.h> by
+    #ifndef C370
+    # include <abc.h>
+    #endif
+    or provide some dummy-file abc.h in the dataset containing the
+    system-include's like <stdio.h> 
+    
+    
+I've already ported several sources to IBM mainframes: gzip, pgp, des,
+gnuchess, popeye. All work proper, but the speed now is incredible!  :-)
+
+If you have problems or more questions feel free to contact me!
+<hd@ms.maus.de>           daily, mails < 16KBytes, no uuencoded
+<harry@hal.westfalen.de>  daily, no limits
+
+regards,
+Harald

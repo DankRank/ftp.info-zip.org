@@ -1,0 +1,18 @@
+This directory contains executables for ConvexOS.
+
+   737 Feb 22 2004  README           what you're reading right now
+386943 Dec  1 1997  unz532x.tar.Z    UnZip 5.32 docs and exes, compress'd tar
+268057 Nov 27 1997  unz532x.zip      UnZip 5.32 docs and exes, zipfile format
+187761 Nov 27 1997  zip22x.zip       Zip 2.2 docs and exes (no encryption)
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/UNIX/CONVEX/ :
+
+  [nothing yet...]
+
+The Convex binaries were compiled on a C3820 running ConvexOS 11.5.
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  1 December 1997

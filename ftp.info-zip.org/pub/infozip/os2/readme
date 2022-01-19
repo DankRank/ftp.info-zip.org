@@ -1,0 +1,35 @@
+This directory contains executables for OS/2 (Intel only).
+
+  1573 Aug 15 2007  readme           what you're reading right now
+ 73963 Aug 21 1993  gz124-16.zip     gzip 1.2.4, OS/2 16-bit executable
+ 76749 Aug 21 1993  gz124-32.zip     gzip 1.2.4, OS/2 32-bit executable
+ 25022 Oct 19 1993  ship16bnd.zip    ship 1.6, bound (OS/2 or DOS) executable
+517685 Apr  6 2005  unz552.zip       UnZip 5.52, OS/2 16&32-bit and DLL (32-bit, C and REXX)
+610808 May 26 2009  unz600.exe       UnZip 6.0, OS/2 32-bitt and DLL
+306775 Jan 10 2000  zip23c.zip       Zip 2.3, OS/2 16&32-bit exes (no encryption)
+310896 Apr  6 2005  zip231c.zip      Zip 2.31, OS/2 16&32-bit exes (no encryption)
+362917 May 26 2009  zip300c.zip      Zip 3.0, OS/2 16&32-bit exes (no encryption)
+
+Encryption binaries are only available from our European site,
+
+ftp://ftp.icce.rug.nl/infozip/OS2/ :
+145253 Jan  9 2000  zcr23x1.zip      Zip 2.3, OS/2 16-bit exes (w/encryption)
+184547 Jan  9 2000  zcr23x2.zip      Zip 2.3, OS/2 32-bit exes (w/encryption)
+
+The 16-bit versions work on all versions of OS/2, at least since 1.2;
+the 32-bit versions work on OS/2 versions 2.0 and up.
+
+The self-extracting files are in zip format.  You can use UnZip 5.x or
+PKUNZIP 2.04g to extract them directly without running them, as in:
+
+  unzip unz552.exe
+
+All Info-ZIP packages contain documentation.  The sources are in ../src .
+In addition, the sources to IBM's unzip32.dll in OS/2 Warp are available:
+
+127940 Jan 13 1995  unzdll2_ibm.zip  sources for IBM's DLL port of UnZip
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+Send problem reports on gzip to:           support@gzip.org
+
+Last updated:  26 May 2009

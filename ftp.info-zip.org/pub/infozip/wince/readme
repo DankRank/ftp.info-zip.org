@@ -1,0 +1,42 @@
+This directory contains executables for Windows CE for both MIPS/NEC
+and Hitachi processors.  Note that Pocket UnZip 1.0 is Steve P. Miller's
+graphical CE port of UnZip 5.3.
+
+  2019 Feb 22 2004  README        what you're reading right now
+ 88568 Apr 25 1997  pun100xM.zip  Pocket UnZip 1.00 for MIPS, exe and full docs
+ 81738 Apr 25 1997  pun100xS.zip  Pocket UnZip 1.00 for SH-3, exe and full docs
+ 22820 Apr 25 1997  pun_docs.zip  full docs for Pocket UnZip 1.00
+ [dir] Apr 25 1997  mips          directory containing bare MIPS exe, help file
+ [dir] Apr 25 1997  sh3           directory containing bare SH-3 exe, help file
+
+The following table lists the current crop of Windows CE devices and
+which binaries they run:
+
+     Manufacturer             CPU             Binary
+     ---------------------    ------------    ---------------
+     Philips Electronics      MIPS R3910      mips/punzip.exe
+     NEC Corp.                NEC VR4101      mips/punzip.exe
+     Casio Computer Co.       Hitachi SH-3    sh3/punzip.exe
+     Compaq Computer Corp.    Hitachi SH-3    sh3/punzip.exe
+     Hewlett-Packard Co.      Hitachi SH-3    sh3/punzip.exe
+     Hitachi Ltd.             Hitachi SH-3    sh3/punzip.exe
+     LG Electronics Inc.      Hitachi SH-3    sh3/punzip.exe
+
+There are no self-extracting archives for Windows CE.  Bare executables are
+provided in their place, with documentation in a separate archive (which
+includes the help file, punzip.htp).  The help file is identical to the HTML
+version:
+
+    http://www.info-zip.org/pub/infozip/punzip.html
+
+Note that "punzip.exe" cannot be renamed or it will not work correctly.
+The executable and "punzip.htp" must be put in the "\Windows" directory
+on Windows CE or it might not work correctly.  "punzip.htp" is optional;
+Pocket UnZip tests for its existence at startup.
+
+Sources are in ../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+Send problem reports on Pocket UnZip to:   stevemil@pobox.com
+
+Last updated:  27 April 1997

@@ -1,0 +1,26 @@
+This is an AOS/VS CLI dump (that's a special-format archive) of the 
+executables for ZIP and UNZIP (ZIP.PR & UNZIP.PR), plus the symbol tables 
+(ZIP.ST & UNZIP.ST) plus the help files (which are just the man pages, 
+with a few additions at the end).  These are from the old version, but 
+they're what I have.  [...]
+
+The reason for the dump is that AOS/VS has file types, & for the most 
+part executables need to be one of a small set of types (I think).  [...]
+
+It occurs to me too late that I should have dumped zip & unzip 
+separately.  The opportunity to do so is about 3 file transfers back, I'm 
+afraid.
+
+[...]
+
+Hope all this helps.  <sigh>
+
+- Dave
+  dave@fci.izzy.net
+  davel@cyberspace.org
+
+                         -------------------------
+
+GRR 960204:  These are Zip 2.01 and UnZip 5.01.  These executables should
+             be able to handle any current zipfile compression method.
+             (Thanks, Dave!)

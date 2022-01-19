@@ -1,0 +1,37 @@
+Short: gzip-1.2.4 RESPIN 2, GNU archiving util
+
+Type: util/arc
+
+System: Amiga
+
+NOTE: This archive root-name is "gzip124x2".  It should REPLACE all
+	occurrences of the older "gzip124x" and "gzip124x1", which 
+        it supercedes.  Previous archives should be deleted.
+
+Date: 9 Apr 94
+
+Release-Date: 18 Aug 93
+
+Author: Jean-loup Gailly <gzip@prep.ai.mit.edu>
+
+Portationist: Carsten Steger <csteger@informatik.tu-muenchen.de>
+
+Rebuilt-by: John Bush <John.Bush@East.Sun.COM>
+
+Uploader: John Bush <john.bush@east.sun.com>
+
+Bugs-reports-to: <bug-gnu-utils@prep.ai.mit.edu>
+
+Compiler: SAS/C 6.51
+
+Problems: Will NOT run properly on AmigaDOS 1.3 (pre- v.36 ROM).
+	It reports "I/O Error" unexpectedly on these machines.
+	See enclosed readme.ami file for workaround.
+        Earlier release (gzip124x.*) had a file compression problem,
+        which was temporarily fixed by gzip124x1.*.  This version (x2)
+        permanently fixes that compression problem, but the limitation
+        on AmigaDOS 1.3 systems still remains.
+
+Distribution: According to the GNU public license.  DO NOT REDISTRIBUTE
+	WITHOUT THE ENCLOSED ACCOMPANYING FILES.  Source code is available
+        as described in README.AMI.

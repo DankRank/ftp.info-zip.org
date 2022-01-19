@@ -1,0 +1,17 @@
+Begin
+File:           unz540xQ.tar.gz
+Description:    Unzip 5.40 QNX4 exes and docs
+Keywords:       archive zip unzip pkzip
+Version:        5.40
+Entered-date:   December 1, 1998
+Author:         Info-ZIP (http://www.cdrom.com/pub/infozip/)
+Ported-by:	    Chris Herborth (chrish@qnx.com)
+Original-site:	Info-ZIP (http://www.cdrom.com/pub/infozip/UnZip.html)
+Copying-policy: Free
+Supplemental:   Unpack zip archives (also includes utilities for
+                creating self-extracting archives under QNX 4, getting
+                extended info about the contents of zip archives,
+                searching zip archives for strings, etc).
+                Full source code is freely available at the URLs listed
+                above.
+End

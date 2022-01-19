@@ -1,0 +1,28 @@
+This directory contains Info-ZIP executables for Macintosh (68k and PowerPC
+hardware).
+
+  1383 Feb 22 2004  README           what you're reading right now
+   688 Jun  7 1998  README.macgzip   info about gzip for the Mac
+ 22953 Jul 27 2000  README.maczip    detailed info about MacZip
+351360 Jul 27 2000  maczip-docs.zip  MacZip 1.05 documentation (MacZip format)
+378216 Jul 27 2000  maczip105nc.hqx  MacZip 1.05 "fat" exe (no encryption)
+ 38692 Nov  2 1997  unz532docs.zip   UnZip 5.32 documentation
+388895 Nov  7 1997  unz532x.hqx      UnZip 5.32, "fat" executable, BinHex'd
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/MACOS/ :
+
+219852 Jul 28 2000  maczip105c.hqx   MacZip 1.05 "fat" exe (with encryption)
+
+MacZip is a graphical executable with integrated Zip and UnZip capability,
+similar to WiZ for Win16 and Win32.  Version 1.05 is based on Zip 2.3 and
+UnZip 5.41, and it is distributed in BinHex format.
+
+The old UnZip 5.32 binary is essentially non-graphical and stores only minimal
+Mac OS file attribute, but it may still be useful.  Its documentation is stored
+in DOS format (CR/LF); extract with UnZip's text-conversion option (correspond-
+ing to "-a" in command-line versions).  The UnZip sources are in ../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  27 July 2000

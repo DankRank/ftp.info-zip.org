@@ -1,0 +1,21 @@
+These are BETA executables for MVS!  But they're all we have for now, unless
+and until someone can try compiling the official Zip and UnZip sources and
+test/fix things under MVS (we know there are a few bugs left).
+
+These executables are provided without warranty, blah blah blah.  Use at
+your own risk (but we believe them to be reasonably functional).
+
+==============================================================================
+
+This directory contains the following files:
+  
+UNZ101.MVSMOD      - This is a MVS TRANSMIT packet file containing
+                     the unzip load module.
+                     Upload it with LRECL 80 RECFM FB and then
+                     do under tso : RECEIVE INDSN(UNZ101.MVSMOD)
+  
+ZIP101.MVSMOD      - This is a MVS TRANSMIT packet file containing
+                     the unzip load module.
+                     Upload it with LRECL 80 RECFM FB and then
+                     do under tso : RECEIVE INDSN(ZIP101.MVSMOD)
+  

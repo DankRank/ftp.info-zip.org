@@ -1,0 +1,18 @@
+This directory contains executables for some of the more popular Unix(-like)
+systems.
+
+   AIX/       executables for IBM AIX on RS/6000
+   CLIX/      executables for Intergraph CLIX
+   CONVEX/    executables for ConvexOS
+   DEC/       executables for DEC Digital Unix (OSF/1) on Alpha, Ultrix on MIPS
+   FREEBSD/   executables for FreeBSD 2.x on Intel
+   HP/        executables for HP-UX on PA-RISC, HP MPE/iX on HP 3000
+   LINUX/     executables for Linux on Intel
+   QNX/       executables for QNX on Intel
+   SCO/       executables for SCO Unix on Intel
+   SGI/       executables for Silicon Graphics IRIX on MIPS
+   SUN/       executables for SunOS and Solaris 2.x on SPARC
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  22 February 2004

@@ -1,0 +1,31 @@
+This directory contains executables for MS-DOS / PC-DOS / DR-DOS / FreeDOS.
+For 32-bit Windows systems you should look in ../WIN32.
+
+  1572 Jul  2 2006  README          what you're reading right now
+  8013 Feb 21 2005  README.DOS      DOS-specific notes
+119146 Aug 19 1993  gzip124.exe     gzip 1.2.4, DOS exe, self-extracting archive
+ 25022 Oct 19 1993  ship16bnd.zip   ship 1.6 exe (encoder/mailer) for DOS, OS/2
+254769 Feb 28 2005  unz552x3.exe    UnZip 5.52, DOS 16- and 32-bit exes/docs
+355271 Jul  2 2006  zip232x.zip     Zip 2.32, DOS exes and docs (w/encryption)
+
+The self-extracting files are in zip format.  You can use UnZip 5.x
+or PKUNZIP 2.04g to extract them directly without running them, as in:
+
+  unzip unz552x3.exe
+
+The UnZip executables were compiled with MSC 8.0 (16-bit) and djgpp-gcc 3.03
+(32-bit) or later.  They have been compressed using UPX 1.24.
+
+The Zip package contains a 32-bit version of Zip (zip.exe); it's not
+necessarily faster than the 16-bit version (and may in some cases be slower),
+but it can process far more files without exhausting available memory.  It
+is useful, for example, when using Zip to back up an entire disk.  The 16-bit
+Zip executables (zip16.exe and/or zip16-sm.exe) were compiled with SMALL_MEM
+defined to minimize out-of-memory problems.  Whenever possible, use zip.exe.
+
+All Info-ZIP packages contain documentation.  The sources are in ../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+Send problem reports on gzip to:           support@gzip.org
+
+Last updated:  2 July 2006

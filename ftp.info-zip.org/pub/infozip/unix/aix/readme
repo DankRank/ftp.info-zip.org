@@ -1,0 +1,33 @@
+This directory contains executables for IBM AIX 3.x through 5L for RS/6000.
+
+  1802 Feb 22 2004  README                what you're reading right now
+257507 Nov  5 1997  unz532x-aix325.tar.Z  UnZip 5.32, AIX 3.x-5.x exes, tarball
+190568 Nov  5 1997  unz532x-aix325.zip    UnZip 5.32, AIX 3.x-5.x exes, zipfile
+214593 Jan  4 1999  unz540x-aix432.tar.Z  UnZip 5.40, AIX 4.x-5.x exes, tarball
+166245 Jan  4 1999  unz540x-aix432.zip    UnZip 5.40, AIX 4.x-5.x exes, zipfile
+223643 Feb 20 2003  unz550x-aix5L.tar.Z   UnZip 5.50, AIX 5L exes/docs, tarball
+170612 Feb 20 2003  unz550x-aix5L.zip     UnZip 5.50, AIX 5L exes/docs, zipfile
+ 93866 Nov 18 1997  zip22x-aix325.zip     Zip 2.2, AIX 3.x/4.[12] exes, zipfile
+109221 Dec 18 1999  zip23x-aix43.zip      Zip 2.3, AIX 4.x-5.x exes, zipfile
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/UNIX/AIX/ :
+
+108437 Nov  8 1997  zcr22x-dynamic.zip    Zip 2.2, AIX 3.x-5.x exes (w/encrypt.)
+454396 Nov  8 1997  zcr22x-static.zip     Zip 2.2, AIX 3.2.5 exes (w/encryption)
+
+The UnZip 5.50 binaries were compiled on AIX 5L with /usr/vac/bin/cc and were
+kindly provided by Laurent P. Montaron of IBM, who also verified that the older
+(dynamically linked) UnZip binaries work on AIX 5L, as well.  (Statically 
+linked older binaries are still available in ../../OLD/UNIX/AIX .)
+
+The Zip 2.2 binaries were compiled on AIX 3.2.5 with xlc 1.3.0.0.  They are
+dynamically linked and should work on any 3.x, 4.x or 5L system.  The Zip 2.3
+binaries were compiled on AIX 4.3.2 with the xlc compiler and should work on
+any 4.3 or 5L system.
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  21 February 2003

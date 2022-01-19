@@ -1,0 +1,34 @@
+This directory contains executables for MVS Classic (a.k.a. OS/390 Base)
+and OS/390 OpenEdition.
+
+  1703 Feb 22 2004  README            what you're reading right now
+  8211 Jan  6 2000  install.mvs       (ASCII) installation notes for MVS
+ 55950 Sep 23 1998  unz532xM-docs.zip UnZip 5.32, MVS docs only, zipfile
+176960 Sep 23 1998  unz532xM.xmit     UnZip 5.32, MVS exe (see install.mvs)
+ 79646 Dec 13 1997  unz532xO-docs.zip UnZip 5.32, OS/390 OE docs only, zipfile
+342578 Dec 18 1997  unz532xO.tar.Z    UnZip 5.32, OS/390 OE exes/docs, tarball
+228388 Dec 13 1997  unz532xO.zip      UnZip 5.32, OS/390 OE exes/docs, zipfile
+ 57794 Jan  6 2000  zip23-docs.zip    Zip 2.3, MVS docs only, zipfile
+435360 Jan  6 2000  zip23xM.xmit      Zip 2.3, MVS executable (see install.mvs)
+409600 Jan  6 2000  zip23xO.bare      Zip 2.3, MVS OE bare exe (see install.mvs)
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/MVS/ :
+
+   [none available]
+
+Thanks to Paul von Behren (Paul_von_Behren@stortek.com) for doing the OS/390
+OpenEdition port and providing the binaries, and thanks to Ian Gorman
+(ian@iosphere.net) and Keith Owens (kaos@ocs.com.au) for updating the classic
+MVS port and providing the binaries.
+
+Note that the documentation is in standard Unix/ASCII format; to convert to
+EBCDIC, extract via "unzip -a".  (The tar.Z archive is identical to the main OE
+zipfile; both contain executables and docs.  The OE docs zipfile contains only
+text files, including the zipgrep script.)
+
+All Info-ZIP packages contain documentation.  Sources are in ../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  6 January 2000

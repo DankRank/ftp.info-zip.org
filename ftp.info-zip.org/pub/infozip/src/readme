@@ -1,0 +1,43 @@
+This directory contains the latest official releases of Info-ZIP's software
+(C source code) and related stuff.
+
+   3088 Feb 10 2005  LICENSE            new license (Zip 2.3+, UnZip 5.41+)
+   2696 Jul  2 2006  README             what you're reading right now
+1063171 May  8 1990  calgarycorpus.zip  Calgary Compression Corpus (benchmark)
+  24979 Feb  8 2004  check-4.3-src.zip  check 4.3 sources (CRC-32 checker)
+ 798720 Aug 18 1993  gzip-1.2.4.tar     gzip 1.2.4 sources ("Unix compress++")
+2866649 Jan 26 2000  maczip104.zip      MacZip 1.04 GUI plus Zip/UnZip sources
+  13493 Jul 18 1994  ship17.zip         ship 1.7 sources (ASCII encoder/mailer)
+   2849 Jan 13 2001  unreduce_full.zip  unreduce.c source (S.H.Smith copyright)
+1746333 Feb 28 2005  unzip552.tar.Z     UnZip 5.52 sources, Unix tar.Z format
+1140291 Feb 28 2005  unzip552.tar.gz    UnZip 5.52 sources, Unix tar.gz format
+1305784 Mar  1 2005  unzip552.zip       UnZip 5.52 sources, zipfile format
+1458011 Mar 11 2005  wiz503.zip         WiZ 5.03 GUI plus Zip/UnZip DLL sources
+   2004 Apr  9 2000  zcrypt.msg         export notification message to US BIS
+  20248 Apr 22 2000  zcrypt.zip         crypto sources (also in Zip, UnZip)
+ 158736 Aug 29 1992  zip11.zip          Zip 1.1 sources
+   1212 Jun 20 2006  zip232.ann         Zip 2.32 announcement message
+ 807180 Jun 20 2006  zip232.tar.gz      Zip 2.32 sources, Unix tar.gz format
+ 961121 Jun 20 2006  zip232.zip         Zip 2.32 sources, zipfile format
+   1655 Sep 13 2003  zipcontent.pl      zip-to-HTML file lister (Perl script)
+
+Note that WiZ 5.03, the Windows 9x/NT graphical version of Zip/UnZip, now
+includes the complete Zip 2.31 and UnZip 5.52 DLL sources; no other sources
+are required to compile WiZ.  (The archive does not contain the COMPLETE source
+code for Zip and UnZip, however--only the Win32-specific sources.)
+
+Also note that Zip 2.32, UnZip 5.52, WiZ 5.03, and MacZip 1.04 all include
+the full crypto source code (i.e., the contents of zcrypt.zip), although the
+latter is still available separately for historical (and regulatory) reasons.
+Both encryption and decryption are enabled by default in all source archives.
+
+Thanks to Ryan Little (rlittle46@comcast.net) for the zipcontent.pl script,
+which creates an indexable web page (HTML) containing the zipfile name, the
+zipfile comment (if any), and its files.  (For full-text indexing, do a search
+for zip2html--but note that its memory requirements can be quite large.)
+
+Send problem reports on Zip/UnZip/WiZ to:  http://www.info-zip.org/zip-bug.html
+Send problem reports on gzip to:           support@gzip.org
+Send problem reports on zipcontent.pl to:  rlittle46@comcast.net
+
+Last updated:  2 July 2005

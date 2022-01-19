@@ -1,0 +1,22 @@
+This directory contains executables for the X68000/Human68k platform
+(Japanese machine).
+
+   953 Feb 22 2004  README            what you're reading right now
+  2089 Sep 23 1999  README-UnZip.X68  Japanese README for UnZip 5.4
+  1884 Sep 23 1999  README-Zip.X68    Japanese README for Zip 2.2
+268117 Sep 23 1999  unz540xH.zip      UnZip 5.4, Human68K/X68000 exes and docs
+287029 Sep 23 1999  zip22xH.zip       Zip 2.2, Human68K/X68000 exes and docs
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/HUMAN68K/ :
+
+153389 May 21 1994  zcr20x.zip        Zip 2.0, Human68K/X68000 exes and docs
+
+Thanks to Tachibana Eriko and/or Shimazaki Ryo (eririn@ma.mailbank.ne.jp) for
+updating both ports and for providing new binaries.
+
+All Info-ZIP packages contain documentation.  The sources are in ../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  25 September 1999

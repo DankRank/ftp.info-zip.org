@@ -1,0 +1,64 @@
+/*
+ *  zip - Version 2.1 (27/04/1996)
+ *  Ported by Neil Harvey & Associates (http://nha.co.za/)
+ *  September 1997
+ *
+ */
+
+*** Description
+
+Zip 2.1 is a compression and file packaging utility.  It is compatible with 
+PKZIP 2.04g (Phil Katz ZIP) for MSDOS systems.  There is a companion to zip
+called unzip (of course) which you should be able to find the same place
+you got zip. 
+
+*** Download
+
+ftp://ftp.nha.co.za/hp3000/zip/
+				
+  Size:        Name            Description
+  -------      -------------   ------------------
+  638,205      zip.m.Z         compressed mover archive (binaries/documentation)
+  440,460      zip.m.gz        gzip'ed mover archive (binaries/documentation)
+  587,266      zip.tar.Z       compressed tar archive (binaries/documentation)
+  415,536      zip.tar.gz      gzip'ed tar archive (binaries/documentation)
+
+  758,809      zip.source.tar.gz
+
+*** Installation
+
+  1)  transfer the archive to your hp3000 (ftp, samba, reflection)
+  2)  uncompress the archive (uncompress, gzip)
+  3)  extract the archive (mover, tar)
+
+  *** NOTE ***
+  i)   The archive contains absolute file names, if this is not what you want
+       you are on your own.
+  ii)  All the binaries have been linked to hpbin.sys.
+       eg:  zip.hpbin.sys = /usr/local/bin/zip
+  iiI) read the documentaion in /usr/local/doc/unzip
+
+
+*** Configuration
+
+  1)  modify your PATH variable to include /usr/local/bin
+  2)  modify your MANPATH variable to include /usr/local/man
+
+  *** NOTE ***
+  i)  Both of these variables can be modified in /etc/profile.
+  ii) The default /etc/profile does not include a MANPATH variable.
+      To correctly add the variable add the following line
+        MANPATH=/usr/man:/usr/local/man
+        export MANPATH
+
+
+*** Testing
+
+  1)  zip <archive name> <file1> <file1> <file3> ...
+  2)  unzip -t <archive name>
+
+Have fun and good luck,
+
+Jens von Bulow
+jens@nha.co.za
+

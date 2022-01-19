@@ -1,0 +1,136 @@
+This directory contains executables for Tandem NSK.
+
+  5640 Feb 22 2004  README          what you're reading right now
+332563 Feb 23 2002  unz550xK.zip    UnZip 5.5, Tandem exes/docs, zipfile format
+331671 Jan  9 2003  unz551xK-beta.zip UnZip 5.51a Tandem exes/docs   [BUGFIX]
+507904 Feb 22 2002  unzip550.bare   UnZip 5.5, bare Tandem executable
+194679 Dec 25 1999  zip23xK.zip     Zip 2.3, Tandem exes/docs (no encryption)
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/TANDEM/ :
+
+  [none available]
+
+All Info-ZIP packages contain documentation.  The sources are in ../src .
+
+The bare UnZip executable can be used to unpack the UnZip and Zip distribution
+archives.  The UnZip archive contains two binaries, UNZIP and UNZIPU; the
+former requires SUPER.SUPER privileges to run and can reset last-open/modified
+timestamps, whereas the latter can be run without any special privileges.
+Both were compiled using Tandem NonStop D48.  Thanks to Dave D. Smith
+(smithdt@bp.com) for doing the Tandem ports and providing the executables.
+
+IMPORTANT NOTE:  The official 5.50 executables have a bug in their support
+    of text files; specifically, they write only the last block to disk
+    (modulo 64 KB).  Binary files are unaffected, and all of the text files
+    in the UnZip archives are less than 64 KB in size, so the existing 5.50
+    executables are sufficient to unpack the 5.51a beta.  Note that this is
+    a temporary bug-fix release; official 5.51 binaries will be available
+    after 5.51 is released.
+
+
+Some older notes from Dave:
+
+    Note that this version of UnZip can only create unstructured, object
+    and text files, not Enscribe files (Tandem's hierarchical database
+    system, allowing key-sequenced files).  I often use the PC PKZIP
+    program to zip things up and then use the Tandem to unzip - or vice
+    versa - with no problems (other than the file-type limitation).  Each
+    Tandem file has a file code that indicates (roughly) what the file
+    contains:
+
+          0     Enscribe or Unstructured
+        100     Object
+        101     Edit (ASCII)
+        180     'C' Text file
+
+[...]
+
+    The Tandem does not support subdirectories.  It has a fixed structure of
+
+        \<system>.$<disk>.<subvol>.<file>
+
+    where all the names have a maximum of 8 characters.  Note that you can
+    default the system disk and subvol parts to blank.  Thus all the
+    following are valid file names:
+
+        \NODE1.$DATA8.DB.FILE1
+        $DATA8.DB.FILE1
+        DB.FILE1
+        FILE1
+        $DATA8.FILE1            (this form is not recommended)
+
+    I've mapped this structure into the zipfile format as:
+
+        //<node>/<disk>/<subvol>/<file/
+
+    Thus the above files would appear as
+
+        //node1/data8/db/file1
+        /data8/db/file1
+        /db/file1
+        file1
+        /data8/subvol/file1     (subvol part picked up from current defaults)
+
+    In addition since Tandem does not support file extensions I have added
+    the ability to specify extension names when zipping and storing as part
+    of the ZIP internal name.  For example:
+
+        ZIP zipfile "zipdir.readme txt"
+
+    is stored in the zipfile as /zipdir/readme.txt
+
+        ZIP zipfile zipdir.readme
+
+    as stored as /zipdir/readme
+
+    The opposite operation is performed for UnZip - assuming that the
+    mapping operation is OK.  In the event that this fails it just uses
+    the filename part of the name and throws away the directory information.
+
+[...]
+
+    On Tandem (NSK) systems there are two sorts of processors - CISC and
+    RISC.  As you might expect, all current machines use RISC processors.
+    However, until very recently all compilers produced CISC code.   This
+    CISC code runs on both CISC and RISC machines.  When running CISC code
+    on RISC machines it gets interpreted - which obviously slows things
+    down.
+
+    To get around this Tandem introduced a product called AXCEL that
+    'accelerates' the CISC code.  It adds an extra RISC code region to
+    the object which makes the object a lot larger (factor of 3) but runs
+    a lot faster.  Programs such as Zip/UnZip that perform a lot of data
+    manipulation run exponentially faster after being AXCELed.
+
+    In addition on Tandem the C compiler has a number of selectable memory
+    models - currently SMALL, LARGE and WIDE.  I have chosen the LARGE
+    memory model as it means the object runs slightly faster.  Selecting
+    WIDE allows larger buffer sizes, as 'int' becomes 32-bit rather than
+    16, but still seemed slower when I tried it against the LARGE version.
+
+[...]
+
+    Just to add complications each release of the Tandem operating system
+    produces a new version of the C compiler and the AXCEL program.  All
+    of my objects are compiled under the "D30" operating system.
+
+    Users running on different versions of NSK should (ideally) re-AXCEL the
+    objects.  However, as is, the Zip/UnZip will probably run OK.
+
+    The common versions of NSK that people will have are:
+
+        C30     Zip/UnZip will NOT work, cannot even be compiled as they
+                  use 'D' series calls
+        D20     should work OK, re-AXCEL may help, re-compile should not
+                  be necessary
+        D30     will work 'as is'
+        D40     should work OK, re-AXCEL may run faster, also re-compile
+                  on D40 may run faster
+
+    D40 is the current release of NSK, though most sites will be on D20/30.
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+Send problem reports on gzip to:           support@gzip.org
+
+Last updated:  12 January 2003

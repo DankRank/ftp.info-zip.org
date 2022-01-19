@@ -1,0 +1,57 @@
+This directory contains executables for HP-UX (PA-RISC and IA64 architectures),
+for MPE/iX (HP 3000--see http://jazz.external.hp.com/ for details and other
+free software), and for HP/Compaq Tru64 Unix (Alpha AXP architecture).
+
+    >>>  For older Compaq/DEC binaries, also see ../DEC on this site.  <<<
+   >>>  For Compaq/Tandem NSK binaries, see ../../TANDEM on this site.  <<<
+
+  3436 Nov 24 2003  README                    what you're reading right now
+  1980 May 15 1999  unz531x-mpeix.README      info about NHA's MPE/iX port
+371527 May 15 1999  unz531x-mpeix.m.gz        UnZip 5.31 MPE/iX exes, mover arc.
+346289 May 15 1999  unz531x-mpeix.tar.gz      UnZip 5.31 MPE/iX exes, tarball
+323309 Sep  4 1997  unz531x-mpeix.zip         UnZip 5.31 MPE/iX exes, zipfile
+251107 Dec  9 2000  unz541x-hpux-parisc.tar.Z UnZip 5.41 HP-UX exes, tarball
+192583 Sep 20 2000  unz541x-hpux-parisc.zip   UnZip 5.41 HP-UX exes, zipfile
+431384 Nov 24 2003  unz550x-hpux-ia64.tar.Z   UnZip 5.50 HP-UX exes, tarball
+319357 Nov 23 2003  unz550x-hpux-ia64.zip     UnZip 5.50 HP-UX exes, zipfile
+284627 Nov 22 2003  unz550x-tru64.tar.Z       UnZip 5.50 Tru64 exes, tarball
+221961 Nov 22 2003  unz550x-tru64.zip         UnZip 5.50 Tru64 exes, zipfile
+  1952 May 15 1999  zcr21x-mpeix.README       info about NHA's MPE/iX port
+440460 May 15 1999  zcr21x-mpeix.m.gz         Zip 2.1 MPE/iX crypto exes, mover
+415536 May 15 1999  zcr21x-mpeix.tar.gz       Zip 2.1 MPE/iX crypto exes, tar.gz
+392320 Sep  4 1997  zcr21x-mpeix.zip          Zip 2.1 MPE/iX crypto exes, zip
+129862 Mar 30 1998  zcr22x-hpux-parisc.zip    Zip 2.2 HP-UX crypto exes/docs
+256807 Nov 23 2003  zcr23x-hpux-ia64.zip      Zip 2.3 HP-UX crypto exes/docs
+148098 Nov 23 2003  zcr23x-tru64.zip          Zip 2.3 Tru64 crypto exes/docs
+214022 Nov 23 2003  zip23x-hpux-ia64.zip      Zip 2.3 HP-UX non-crypto exes/docs
+111982 Sep 20 2000  zip23x-hpux-parisc.zip    Zip 2.3 HP-UX non-crypto exes/docs
+123134 Nov 22 2003  zip23x-tru64.zip          Zip 2.3 Tru64 non-crypto exes/docs
+
+The (Zip) encryption binaries are also available from our European site:
+
+	ftp://ftp.icce.rug.nl/infozip/UNIX/HP/
+
+Thanks to Michael Mauch (michael.mauch@gmx.de)--and to HP/Compaq for their
+"testdrive" program--for compiling the Tru64 Unix and HP-UX/IA64 binaries.
+He used Compaq C 6.5-011 on Tru64 5.1B ("Rev. 2650") and HP aC++/ANSI C
+B3910B A.05.52 on HP-UX.
+
+Thanks to Richard Lloyd (R.K.Lloyd@csc.liv.ac.uk) and the HP-UX Porting and
+Archive Centre (http://hpux.csc.liv.ac.uk/) for compiling the HP-UX PA-RISC
+encryption binaries.  The newer HP-UX PA-RISC binaries were downloaded from
+The Written Word's site (http://www.thewrittenword.com/free/downloads/).  All
+archives have been repackaged as standard Info-ZIP distributions.
+
+Thanks to Jens von Bulow (jens@nha.co.za) and Neil Harvey & Associates
+(http://nha.co.za/) for porting and compiling the MPE/iX binaries, and to
+Lars Appel (lappel@grc.hp.com) for pointing us at them.  Note that the two
+*.gz archives come straight from ftp://ftp.nha.co.za/hp3000/unzip/ (i.e.,
+they're completely unmodified by Info-ZIP).  Read unz531x-mpeix.README
+before downloading them.  unz531x-mpeix.zip is a standard Info-ZIP package
+containing the usual binaries and documentation.
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  24 November 2003

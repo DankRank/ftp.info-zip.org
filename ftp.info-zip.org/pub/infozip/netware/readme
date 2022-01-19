@@ -1,0 +1,29 @@
+This directory contains executables for Novell NetWare 3.x through 5.x.
+
+  1402 Feb 22 2004  README            what you're reading right now
+  8389 Oct 16 2000  README.novell     installation and porting info for NetWare
+   --  Mar  8 1995  beta/             very old beta port:  Zip 2.0j, UnZip 5.0
+   --  Jul 21 1995  beta2/            very old beta port:  Zip 2.0j, UnZip 5.12
+ 90339 Oct 16 1999  unz540xNLM.zip    UnZip 5.40, NetWare Loadable Module & docs
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/NOVELL/ :
+
+   [none available]
+
+Thanks to Vance Baarda (VRB@novell.com) for doing/updating the Novell NetWare
+port of UnZip and providing the binaries and notes.  See README.novell
+(included in the zipfile) for installation notes and important information
+about the differences between the three UnZip ports.
+
+Note that both sets of BETA versions are of UNKNOWN QUALITY.  Also note that
+the "beta2" binaries were retrieved from an external site and include no
+information about who built them or what changes were made.  USE AT YOUR OWN
+RISK!  (Vance's 5.40 port, on the other hand, apparently was considered good
+enough that Novell bundled it with NetWare 5.1.)
+
+All Info-ZIP packages contain documentation.  Sources are in ../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  16 October 2000

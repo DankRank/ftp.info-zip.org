@@ -1,0 +1,234 @@
+-----------------------------------------------------------------------
+[Installation notes for MVS (OS/390 Base) port of UNZIP 5.32 and ZIP 2.3]
+
+Installation
+============
+
+The MVS classic executables are stored in MVS "TRANSMIT" format instead
+of being stored in ZIP archives.  This format takes a little longer to
+download, but installation is slightly simpler.
+
+The MVS Open Edition executable is just a stream of bytes, like any
+other Unix executable.  No special directory data so no need for a
+special file format.
+
+You should allocate a partitioned data set, INFOZIP.LOAD, in your user
+account.  For example, if you high level qualifier (which is normally
+your user ID) is JOE, allocate the PDS 'JOE.INFOZIP.LOAD'.  ZIP and
+UNZIP occupy a total of 400K -- allocate the PDS with a primary extent
+size of 400K and secondary size of 100K.
+
+
+Installing UNZIP
+----------------
+
+The UNZIP executable is supplied as the binary file unz532xM.xmit, in the
+MVS "TRANSMIT" format.
+
+You must get the unz532xM.xmit file on to your system as a binary file in
+fixed blocked recording mode, record length 80.
+
+If you are using FTP in MVS, you can get the file in the correct
+format with the LOCSITE and BINARY commands.  Assuming that the UNZIP
+executable is stored on the remote site as unz532xM.xmit, you could
+issue the following commands
+
+    FTP where.ever.com
+    <enter user id and password and other stuff>
+    BINARY
+    locsite recfm=fb lrecl=80 blocksize=3120
+    GET unz532xM.xmit unzip.xmit
+    QUIT
+
+If you are using a 3270 terminal session to upload from a PC, you can
+upload the file in the correct format with the SEND command:
+
+    SEND unz532xM.xmit A: unzip.xmit recfm(f) lrecl(80)
+
+If your 3270 emulator does not have the SEND command, but is a GUI
+application, it may allow you to upload from the menu bar.  If so, set
+your options to binary, MVS, fixed record length 80, and a block size
+of 3120 before you upload.  Make sure that ASCII conversion is off and
+CR/LF conversion is off.
+
+When you have uploaded the "transmit" file, you can convert it to an
+executable module by using the RECEIVE command:
+
+    receive indsname(unzip.xmit)
+
+This will produce a partitioned data set, INFOZIP.LOAD(UNZIP),
+in your user account.
+
+You may get two messages.  The first message will be
+
+    INMR901I Dataset OMNI.INFOZIP.LOAD from OMNI on NODENAME   
+    INMR902I Members: UNZIP                                      
+    INMR906A Enter restore parameters or 'DELETE' or 'END' +   
+    ***                                                        
+
+Reply to this message by just hitting the ENTER key.
+
+The second message occurs if you have already allocated
+INFOZIP.LOAD:
+
+    INMR045I Dataset 'OMNI.INFOZIP.LOAD' already exists.  Reply 'R'
+    to replace identically named members. +                                                        
+Reply to this message by hitting the "R" key and the ENTER key.
+UNZIP will now be in your PDS as INFOZIP.LOAD(UNZIP).  You can
+check for correct installation by giving the TSO command
+
+    call infozip(unzip) '-v'
+
+UNZIP should run and give version information.
+
+
+Installing ZIP
+--------------
+
+The MVS classic ZIP executable is supplied as the binary file
+zip23xM.xmit, in the MVS "TRANSMIT" format.  It was compiled from
+ftp://ftp.cdrom.com/pub/infozip/src/zip23.tar.gz, dated Dec 19 1999,
+20:02, using OS/390 v2r8 using OS/390 C 5647A01 V2 R6 M00.
+
+Note: There is a known bug in OS/390 that can cause zip 2.3 to abend in
+fseek().  If you hit this, ask IBM for PTFs relating to fseek() on
+memory and/or hiperspace files.  zip23 has failed on v2r6 due to this
+bug, the same binaries work on v2r8.
+
+You must get the zip23xM.xmit file on to your system as a binary file
+in fixed blocked recording mode, record length 80.
+
+If you are using FTP in MVS, you can get the file in the correct
+format with the LOCSITE and BINARY commands.  Assuming that the UNZIP
+executable is stored on the remote site as zip23.xmit, you could
+issue the following commands
+
+	FTP where.ever.com
+	<enter user id and password and other stuff>
+	BINARY
+	locsite recfm=fb lrecl=80 blocksize=3120
+	GET zip23xM.xmit zip.xmit
+	QUIT
+
+If you are using a 3270 terminal session to upload from a PC, you can
+upload the file in the correct format with the SEND command:
+
+    SEND zip23xM.xmit A: zip.xmit recfm(f) lrecl(80)
+
+When you have uploaded the "transmit" file, you can convert it to an
+executable module by using the RECEIVE command:
+
+    receive indsname(zip.xmit)
+
+This will produce a partitioned data set, INFOZIP.LOAD(ZIP),
+in your user account.
+
+You may get two messages.  The first message will be
+
+    INMR901I Dataset XXXXXX.INFOZIP.LOAD from XXXXXXX on ????????
+    INMR906A Enter restore parameters or 'DELETE' or 'END' +
+
+Reply to this message by just hitting the ENTER key.
+
+The second message occurs if you have already allocated
+INFOZIP.LOAD:
+
+    INMR045I Dataset 'userid.INFOZIP.LOAD' already exists.  Reply 'R'
+    to replace identically named members. +                                                        
+Reply to this message by hitting the "R" key and the ENTER key.
+ZIP will now be in your PDS as INFOZIP.LOAD(ZIP).  You can
+check for correct installation by giving the TSO command
+
+    call infozip(zip) '-v'
+
+ZIP should run and give version information.
+
+The MVS OE executable is supplied as the binary file zip23xO.bare; it
+is just a stream of bytes.  It was compiled from
+ftp://ftp.cdrom.com/pub/infozip/src/zip23.tar.gz, dated Dec 19 1999,
+20:02, using OS/390 v2r8 using OS/390 C 5647A01 V2 R6 M00.
+
+The best way of transferring the MVS OE executable to the mainframe is
+via ftp.
+
+	FTP where.ever.com
+	<enter user id and password and other stuff>
+	BINARY
+	LCD /usr/local/bin (or wherever you want zip)
+	GET zip23xO.bare zip
+	QUIT
+
+
+Installing Documentation
+------------------------
+
+Once you have UNZIP running, you can use it to extract documentation
+from ZIP archives.
+
+You can transfer the ZIP archives to MVS as a binary file with any
+record length.  A record length of 1 will work fine:
+
+    via FTP:
+
+        FTP where.ever.com
+        <enter user id and password and other stuff>
+        BINARY
+        locsite recfm=fb lrecl=1 blocksize=6144
+        GET zip23-docs.zip zipdoc.zip
+        GET unz532xM-docs.zip unzipdoc.zip
+        QUIT
+
+    via 3270 session:
+
+        SEND zip23-docs.zip A: zipdoc.zip RECFM(F) LRECL(1)
+        SEND unz532xM-docs.zip A: unzipdoc.zip RECFM(F) LRECL(1)
+
+For MVS unzip, you have to preallocate two documentation datasets with
+RECFM=FB, LRECL=128, any suitable blocksize, 3 directory blocks, 60
+blocks on a 3390.  If you called the documentation datasets
+userid.UNZIP.DOCS and userid.ZIP.DOCS, you unzip by
+
+    call infozip(unzip) '/-a unzipdoc.zip -d unzip.docs *'
+    call infozip(unzip) '/-a fb -d zip.docs *'
+
+The "-a" option is required because the documents are archived as ASCII
+text files, but they must be converted to EBCDIC to read them in MVS.
+Of particular interest are READMVS and READMVSL, the latter is for LE
+environments.
+
+
+Notes
+=====
+
+Different EBCDIC Character Sets
+-------------------------------
+
+The documentation may look strange on your system, because UNZIP
+translates from ASCII to "Open Systems" EBCDIC (IBM-1047).  Unless
+you are a software developer, you are probably using a different
+kind of EBCDIC (like US EBCDIC, IBM-037).  This causes some character
+codes to display as different characters.  For example, the character
+codes that display as square brackets in IBM-1047 will display as
+e-acute and a-grave in IBM-037.
+
+
+IND$FILE protocol
+-----------------
+
+This is the method by which files are transferred via 3270 sessions
+between PC and mainframe.
+
+If you know how to transfer files via 3270 session between PC and
+mainframe, you know as much as you need to know about IND$FILE.
+
+If your mainframe has IND$FILE, and your 3270 emulator does file
+transfers, you can use your emulator to transfer files between PC
+and mainframe.
+
+
+-----------------------------------------
+
+The UNZIP 5.32 and ZIP 2.3 executable modules require just under 400K
+of space on disk.  To allow from more convenient installation, you may
+want to pre-allocate a partitioned data set, INFOZIP.LOAD, of about
+1000K.

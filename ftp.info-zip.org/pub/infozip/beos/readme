@@ -1,0 +1,31 @@
+This directory contains executables for BeOS, both Intel/AMD/etc. (x86)
+chips and PowerPC.  Note that BeOS R4 and later ship with UnZip 5.31
+executables already installed in /bin.
+
+  1488 Feb 22 2004  README            what you're reading right now
+186170 Apr 17 2000  unz541xB-ppc.zip  UnZip 5.41, R5 PowerPC exes/docs
+214936 Apr 17 2000  unz541xB-x86.zip  UnZip 5.41, R5 Intel x86 exes/docs
+   836 Apr  3 2000  zip23xB-ppc.txt   Zip 2.3, R5 PowerPC info
+112761 Apr  3 2000  zip23xB-ppc.zip   Zip 2.3, R5 PowerPC exes/docs (no crypto)
+   739 Apr  3 2000  zip23xB-x86.txt   Zip 2.3, R5 x86 info
+154480 Apr  3 2000  zip23xB-x86.zip   Zip 2.3, R5 x86 exes/docs (no encryption)
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/BEOS/ :
+
+101214 Nov 13 1997  zcr22xB.zip       Zip 2.2 exes and docs (with encryption)
+
+WARNING:  Starting with beta version 2.2j dr9 v3 of Zip, the BeOS data is
+          stored in a new, safer way.  This makes it incompatible with the
+          file attributes and type/creator codes stored in very old BeOS zip
+          archives.  You WILL still be able to get the data out of these old
+          archives.
+
+          THIS IS NOT A PROBLEM UNLESS YOU HAVE VERY OLD BeOS ZIP FILES.
+
+All Info-ZIP packages contain documentation.  The sources are in ../src .
+BeOS port by Chris Herborth (chrish@pobox.com).
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  17 April 2000

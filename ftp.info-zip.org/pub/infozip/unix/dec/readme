@@ -1,0 +1,37 @@
+This directory contains executables for DEC/Compaq Digital Unix (a.k.a. DUX,
+formerly OSF/1, and possibly a.k.a. Tru64 Unix) on Alpha AXP and for DEC Ultrix
+on MIPS.
+
+  2043 Feb 22 2004  README             what you're reading right now
+590511 Nov  5 1997  unz532x-stat.tar.Z UnZip 5.32, Digital Unix static exes/docs
+422150 Nov  5 1997  unz532x-stat.zip   UnZip 5.32, Digital Unix static exes/docs
+291546 Dec  1 1997  unz532x-ulx.zip    UnZip 5.32, Ultrix exes/docs, zipfile
+264697 Nov 23 2000  unz541x-dyn.tar.Z  UnZip 5.41, Digital Unix dynamic exes
+206926 Sep 20 2000  unz541x-dyn.zip    UnZip 5.41, Digital Unix dynamic exes
+346660 Nov 18 1997  zip22x-stat.zip    Zip 2.2, DUX static exes (no encryption)
+141230 Dec  1 1997  zip22x-ulx.zip     Zip 2.2, Ultrix exes/docs (no encryption)
+115469 Sep 20 2000  zip23x-dynamic.zip Zip 2.3, DUX dynamic exes (no encryption)
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/UNIX/DEC/ :
+
+142857 Nov 24 1997  zcr22x-dynamic.zip Zip 2.2, DUX dynamic exes (w/encryption)
+435677 Nov 24 1997  zcr22x-static.zip  Zip 2.2, DUX static exes (w/encryption)
+169502 Nov 30 1997  zcr22x-ulx.zip     Zip 2.2, Ultrix exes/docs (w/encryption)
+
+At least some of the DUX binaries were compiled under Digital Unix 4.0A with
+DEC C V5.2-030.  (The UnZip 5.41 and Zip 2.3 binaries were downloaded from The
+Written Word's Open Source site, http://www.thewrittenword.com/free/downloads/.)
+The statically linked ones work under DUX 3.2 and 4.0; the dynamically linked
+ones will only work under DUX 4.x.
+
+The Ultrix binaries were compiled with GNU C 2.6.3 and are statically linked.
+unz532x-ulx.zip is actually a self-extracting zipfile; if you don't have an
+older copy of UnZip already, just set its permissions to executable (e.g., 755)
+and run it to extract to the current directory.
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  23 November 2000

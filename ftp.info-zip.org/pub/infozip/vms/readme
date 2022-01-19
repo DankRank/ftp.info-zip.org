@@ -1,0 +1,45 @@
+This directory contains executables for VMS/OpenVMS (VAX, Alpha AXP,
+Itanium/IA64).
+
+   2242 Mar 15 2005  README              what you're reading right now
+   2971 Jun 23 1994  bilf100-src.zip     convert between binary and stream-LF
+ 126976 Sep  7 1994  gzip124x-axp.exe    gzip 1.2.4, VMS/AXP bare executable
+  54784 Sep  7 1994  gzip124x-vax.exe    gzip 1.2.4, VMS/VAX bare executable
+ 209616 Sep  7 1994  gzip124x.zip        gzip 1.2.4, VMS executables, docs, etc.
+  10282 Feb 26 1993  touchx.zip          BSD/SysV "touch" for VMS; VAX exe/docs
+ 163840 Feb 28 2005  unz552xV-axp.exe    UnZip 5.52, VMS/AXP bare exe, VMS CLI
+ 147456 Feb 28 2005  unz552xV-axp2.exe   UnZip 5.52, VMS/AXP bare exe, Unix CLI
+ 409600 Feb 28 2005  unz552xV-ia64.exe   UnZip 5.52, VMS/IA64 bare exe, VMS CLI
+ 376832 Feb 28 2005  unz552xV-ia642.exe  UnZip 5.52, VMS/IA64 bare exe, Unix CLI
+ 114688 Feb 28 2005  unz552xV-vax.exe    UnZip 5.52, VMS/VAX bare exe, VMS CLI
+ 104448 Feb 28 2005  unz552xV-vax2.exe   UnZip 5.52, VMS/VAX bare exe, Unix CLI
+1941923 Feb 28 2005  unz552xV.zip        UnZip 5.52, VMS exes, objs, docs, etc.
+ 740730 Mar 14 2005  zip231xV.zip        Zip 2.31, VMS exes/objs/docs, w/crypto
+2902994 Jul 12 11:31 zip30xv.zip         Zip 3.0, VMS exes/objs/docs, w/crypto
+
+The executables are not self-extracting; they are plain executables.  The
+"VMS CLI" ones use VMS-style "/longCommandLineOptions"; the "Unix CLI" ones
+use the standard Info-ZIP Unix-style options (-v, -o, etc.).  Set them up as
+foreign commands by defining symbols for them, as in:
+
+  unzip == $disk:[dir]unz552xV-axp.exe
+
+or
+
+  unzip2 == $disk:[dir]unz552xV-axp2.exe
+
+and then use normal UnZip options (e.g., "unzip /test zip23xV.zip" or
+"unzip2 -t zip23xV.zip" to test).  You will have to do something similar
+to install the enclosed executables; be sure to read the README files and
+other documentation in the zipfiles.
+
+Object files are included in the zipfiles so that users of older systems
+can link their own executables.  (This is required for the Zip executables.)
+
+All Info-ZIP packages contain documentation.  The sources are in ../src .
+
+Send problem reports on Zip and UnZip to:
+                                    http://www.info-zip.org/zip-bug.html
+Send problem reports on gzip to:    support@gzip.org
+
+Last updated:  12 July 2008

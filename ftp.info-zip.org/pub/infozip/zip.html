@@ -1,0 +1,472 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Info-ZIP's Zip</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+
+<!-- http://www.w3.org/TR/REC-CSS2/box.html -->
+<STYLE TYPE="text/css">
+  P { margin-bottom: 0em }
+  UL {
+    margin-bottom: 0em;
+    margin-top: 0em;
+    list-style: disc;
+  }
+  LI {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  PRE, TT {
+    font-size:100%;
+    color:#7A4707;
+  }
+</STYLE>
+
+<LINK REV="made" HREF="http://pobox.com/~newt/greg_contact.html">
+<!--  Copyright (c) 1995-2008 Greg Roelofs and Chris Herborth.  -->
+</HEAD>
+
+
+<!-- BODY BGCOLOR="#bfcf7f" -->
+<BODY>
+<H1 ALIGN="center">
+<IMG WIDTH=500 HEIGHT=105 ALT="Info-ZIP" SRC="images/InfoZIP-gold2.png">
+</H1>
+
+<P>
+<HR>
+
+<P>
+<H1 ALIGN="center"> Zip 3.0
+<IMG WIDTH=40 HEIGHT=40 SRC="images/zip-32-40t.png" ALIGN="absmiddle">
+</H1>
+
+<P>
+Zip is a compression and file packaging/archive utility. Although highly
+compatible both with PKWARE's PKZIP and PKUNZIP utilities for MS-DOS and
+with Info-ZIP's own <A HREF="UnZip.html">UnZip</A>, our primary objectives
+have been portability and other-than-MSDOS functionality.  Features not
+found in the PKWARE version include:
+
+<P>
+<UL>
+   <LI>creating zipfiles in a pipe or on a device
+   <LI>VMS and OS/2 extended file attributes
+   <LI>conversion between Unix, MS-DOS and Macintosh text file formats
+   <LI>the ability to run on most of your favorite operating systems.
+</UL>
+
+<P>
+Plus it's <I>free</I>, as is the <A HREF="#Sources">source code</A>.
+<B>Whoa</B>.
+
+<P>
+Zip is useful for packaging a set of files for distribution, for
+archiving files, and for saving disk space by temporarily compressing
+unused files or directories.
+Zip puts one or more compressed files into a single ZIP archive,
+along with information about the files (name, path, date, time of last
+modification, protection, and check information to verify file
+integrity). An entire directory structure can be packed into a ZIP
+archive with a single command.
+
+<P>
+Zip has one compression method (deflation) and can also store files
+without compression.  Zip automatically chooses the better of the two
+for each file.  Compression ratios of 2:1 to 3:1 are common for text files.
+
+<P>
+<CENTER>
+<TABLE WIDTH="80%" BORDER=0 CELLPADDING=8>
+  <TR BGCOLOR="#00aa00">
+    <TD>  <!-- ALIGN="center" -->
+      <FONT COLOR="#ffffff">
+      <B>All known vulnerabilities are fixed</B> in Zip 2.32.
+      (Let's hope it stays that way.)
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<P>
+<CENTER>
+<TABLE WIDTH="80%" BORDER=0 CELLPADDING=8>
+  <TR BGCOLOR="#ff0000">
+    <TD>  <!-- ALIGN="center" -->
+      <FONT COLOR="#ffffff">
+      Zip 2.3 and (presumably) all previous versions have a <B>buffer-overrun
+      vulnerability</B> relating to deep directory paths that could potentially
+      lead to local privilege escalation (e.g., in the case of automated,
+      Zip-based backups).
+      See the <A HREF="FAQ.html#corruption"><B><FONT COLOR="#ffffff">FAQ
+      page</FONT></B></A> for details.
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<P>
+<H3>Contents of This Page:</H3>
+
+<P>
+<UL>
+    <LI><A HREF="#Release"><B>Latest Release</B></A>
+    <LI><A HREF="#Future"><B>Future Plans</B></A>
+    <LI><A HREF="#Downloads"><B>Downloads</B></A>
+    <LI><A HREF="#Other"><B>Other Stuff</B></A>
+</UL>
+
+<P>
+<A NAME="Release">
+<HR>
+</A>
+
+<P>
+<H2>Latest Release</H2>
+
+<P>
+New features in <B>Zip 3.0</B>, released 7&nbsp;July 2008:
+
+<P>
+<UL>
+    <LI>large-file support (i.e., &gt; 2GB)
+    <LI>support for more than 65536 files per archive
+    <LI>multi-part archive support
+    <LI>bzip2 compression support
+    <LI>Unicode (UTF-8) filename and (partial) comment support
+    <LI>difference mode (for incremental backups)
+    <LI>filesystem-synch mode
+    <LI>cross-archive copy mode
+    <LI>extended progress info and logging
+    <LI>improved archive-fixing support
+    <LI>improved streaming and piping
+    <LI>improved command-line parser
+    <LI>improved Unix FIFO support
+    <LI>Unix 32-bit UIDs/GIDs (<I>requires UnZip 6.0 to restore</I>)
+</UL>
+
+<P>
+<A NAME="Future">
+<HR>
+</A>
+
+<P>
+<H2>Future Plans</H2>
+
+<P>
+<!--
+There may never be another major release of Zip.  Aside from the fact that
+Info-ZIP is slowly calcifying, so is the zipfile format itself.  It badly
+needs a major upgrade to support large files, large file systems, and real
+timestamps.  See our <A HREF="FAQ.html#limits">Frequently Asked Questions</A>
+page for details.
+ -->
+
+<P>
+The next major release of Zip will be version <B>3.1</B>, with AES encryption,
+complete Unicode-comments support, extended attributes, and perhaps some
+other things.
+
+
+<P>
+<A NAME="Binaries">     <!-- historical -->
+<A NAME="Sources">      <!-- historical -->
+<A NAME="Downloads">    <!-- NEW 20071021 -->
+<HR>
+</A>
+
+<P>
+<H2>Downloads</H2>
+
+<P>
+<BLOCKQUOTE>
+   <B>NEW RELEASE</B>:  <I>Most binaries are contributed by third parties,
+   so there's no fixed schedule for when any of them might appear.  Those
+   binaries typically provided by Info-ZIP team members (DOS, Win32, OS/2,
+   Linux, FreeBSD, VMS) have already started showing up and should be fully
+   available within a few weeks, though we make no promises.  Please be
+   patient, and feel free to grab the sources and compile your own!  (Yes,
+   even you.  Free, downloadable compilers exist for all major OSes!)</I>
+</BLOCKQUOTE>
+
+<!--
+<P>
+<BLOCKQUOTE>
+   <B>NOTE</B>:  <I>If you find a broken link, please <A HREF=
+   "http://www.info-zip.org/zip-bug.html">tell us about it</A>.  Thanks!</I>
+</BLOCKQUOTE>
+ -->
+
+<P>
+Ready-to-run binary versions of Zip are available for numerous platforms
+and operating systems, but for most systems, only older binaries are available.
+The three primary CTAN sites (and their many mirrors) contain a snapshot of
+these binaries, current as of roughly 2004 (i.e., UnZip 5.51 and Zip 2.3
+timeframe):
+
+<P>
+<UL TYPE="disc">
+    <LI><A HREF="ftp://tug.ctan.org/tex-archive/tools/zip/info-zip/"
+       >tug.ctan.org</A> (US)
+       <FONT COLOR="#cc0000"><B>[FROZEN]</B></FONT>
+       <!-- FROZEN as of 20070126 -->
+    <LI><A HREF="ftp://ftp.tex.ac.uk/tex-archive/tools/zip/info-zip/"
+       >ftp.tex.ac.uk</A> (UK)
+       <FONT COLOR="#cc0000"><B>[FROZEN]</B></FONT>
+       <!-- FROZEN as of 20070126 -->
+    <LI><A HREF="ftp://ftp.dante.de/tex-archive/tools/zip/info-zip/"
+       >ftp.dante.de</A> (Germany)
+       <FONT COLOR="#cc0000"><B>[FROZEN]</B></FONT>
+       <!-- FROZEN as of 20070126 -->
+</UL>
+
+<P>
+Here's a quick guide to the directory structure of the old ftp site:
+
+<P>
+<CENTER>
+<TABLE BORDER=2>
+    <TR>
+        <TD>
+<TABLE BORDER=0>
+    <TR>
+        <TH COLSPAN=2 ALIGN="left">Binaries for this OS...</TH>
+        <TH ALIGN="left">...can be found in this directory</TH>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>AmigaDOS</TD>
+        <TD><TT>AMIGA</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>AOS/VS</TD>
+        <TD><TT>AOSVS/beta</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>Atari TOS/MiNT</TD>
+        <TD><TT>ATARI</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>BeOS</TD>
+        <TD><TT>BEOS</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>Human68K (X68000)</TD>
+        <TD><TT>HUMAN68K</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>Macintosh</TD>
+        <TD><TT>MACOS</TT> (also see <A HREF="http://www.haase-online.de/dirk/maczip/download/">Dirk Haase</A> page)</TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>MS-DOS / PC-DOS / DR-DOS / FreeDOS</TD>
+        <TD><TT>MSDOS</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>MVS ("OS/390 Base") / OS/390 OpenEdition</TD>
+        <TD><TT>MVS</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>Novell Netware</TD>
+        <TD><TT>NOVELL</TT> (also see <A HREF="http://www.novell.com/coolsolutions/tools/1099.html">HrZip and HrUnZip</A> page)</TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>OS/2</TD>
+        <TD><TT>OS2</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>QDOS / SMSQ</TD>
+        <TD><TT>QDOS</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>RISC OS (e.g., Acorn Archimedes)</TD>
+        <TD><TT>RISCOS</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>Tandem NSK D30 (should also be OK on D20, D40)</TD>
+        <TD><TT>TANDEM</TT> (also see <A HREF="http://www.kyrenia.co.uk/infozip.htm">Info-ZIP for Tandem</A> page)</TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=3><B>Unix</B>:
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>AIX 3.2.5 through 5L</TD>
+        <TD><TT>UNIX/AIX</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>CLIX (Intergraph)</TD>
+        <TD><TT>UNIX/CLIX</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>ConvexOS</TD>
+        <TD><TT>UNIX/CONVEX</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>Digital Unix (OSF/1, Compaq Tru64) / Ultrix</TD>
+        <TD><TT>UNIX/DEC</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>FreeBSD</TD>
+        <TD><TT>UNIX/FREEBSD</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>HP-UX (PA-RISC) / MPE/iX (HP 3000)</TD>
+        <TD><TT>UNIX/HP</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>Linux</TD>
+        <TD><TT>UNIX/LINUX</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>NetBSD</TD>
+        <TD><A HREF="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/archivers/unzip/README.html">ftp.netbsd.org</A></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>QNX</TD>
+        <TD><TT>UNIX/QNX</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>SCO Unix</TD>
+        <TD><TT>UNIX/SCO</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>SGI Irix</TD>
+        <TD><TT>UNIX/SGI</TT></TD>
+    </TR>
+    <TR>
+        <TD>&nbsp;</TD>
+        <TD>Solaris / SunOS</TD>
+        <TD><TT>UNIX/SUN</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>VM/CMS</TD>
+        <TD><TT>VMCMS</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>VMS</TD>
+        <TD><TT>VMS</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>Windows 3.x</TD>
+        <TD><TT>WIN16</TT></TD>
+    </TR>
+    <TR>
+        <TD COLSPAN=2>Windows 9x / ME / NT / 2000 / XP / etc.</TD>
+        <TD><TT>WIN32</TT></TD>
+    </TR>
+</TABLE>
+        </TD>
+    </TR>
+</TABLE>
+</CENTER>
+
+
+<P>
+As of 2007, the <B>latest sources and binaries</B> for Zip, UnZip, WiZ and
+MacZip (including encryption code) are available only at <A HREF=
+"http://sourceforge.net/project/showfiles.php?group_id=118012">Info-ZIP's
+SourceForge site</A>.
+<!--
+                <IMG WIDTH=14 HEIGHT=13 SRC="images/star.png">
+ -->
+
+<P>
+<A NAME="Other">
+<HR>
+</A>
+
+<P>
+<H2>Other Stuff</H2>
+
+<P>
+Technical information on zipfiles and other assorted Info-ZIP documentation
+is available from:
+
+<P>
+<UL>
+   <LI><A HREF="doc/">www.info-zip.org</A> (Kentucky, US) or local mirror
+</UL>
+
+<P>
+Technical information and documentation for <B>deflate/inflate</B> and
+<B>zlib</B> are available from :
+
+<P>
+<UL>
+   <LI>the <A HREF="http://zlib.net/">zlib home page</A>
+       <!-- was "http://www.info-zip.org/pub/infozip/zlib/" -->
+       <!-- was "http://www.zlib.org/" -->
+</UL>
+
+<P>
+Further information on where to (possibly) find Info-ZIP stuff is available in:
+
+<P>
+<UL>
+   <LI>the Info-ZIP "<A HREF="doc/WHERE">WHERE</A>" file (ASCII text)
+</UL>
+
+<P>
+Information about commercial use, modification and redistribution of Zip, 
+UnZip, WiZ and MacZip is available in:
+
+<P>
+<UL>
+   <LI>the <A HREF="license.html">Info-ZIP license</A>
+</UL>
+
+<P>
+It's basically BSD-like, but note that there may still be a few remaining 
+files in some of the packages that are covered by different licenses.
+
+<P>
+<HR>
+
+<P>
+<A HREF="Info-ZIP.html"><IMG WIDTH=101 HEIGHT=21 BORDER=0 ALT="[Info-ZIP]"
+ SRC="images/InfoZIP-gold-sml.png" ALIGN="bottom"></A> Return to the
+<A HREF="Info-ZIP.html">Info-ZIP Home Page</A>.
+
+<P>
+<HR>
+Last updated 4 October 2008.  Web page occasionally maintained by Greg Roelofs.
+Please direct Info-ZIP queries (availability, ports, bugs, etc.) to
+<A HREF="http://www.info-zip.org/zip-bug.html"><B>Zip-Bug</B></A>&nbsp;.
+<HR>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0>
+  <TR>
+    <TD ALIGN="left">
+      <FONT SIZE="-1">
+      Copyright &#169; 1995-2008 
+      <A HREF="http://pobox.com/~newt/">Greg Roelofs</A>.<BR>
+      Zip is maintained by Ed Gordon.
+      </FONT>
+    </TD>
+    <TD ALIGN="right" VALIGN="top">
+      <FONT SIZE="-1">
+      &nbsp;
+<!--
+      <A HREF="ftp://ftp.info-zip.org/pub/infozip/">Primary ftp site</A> hosted
+      by <A HREF="http://archiv.leo.org/">LEO</A>.
+ -->
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>

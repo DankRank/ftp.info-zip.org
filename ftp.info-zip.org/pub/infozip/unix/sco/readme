@@ -1,0 +1,21 @@
+This directory contains executables for SCO 386/486 Unix, rel V.3.2 and V.4.x.
+
+  1028 Feb 22 2004  README           what you're reading right now
+143358 Feb 20 1994  unz51sco.tar.Z   UnZip 5.1 exes, compress'd tarfile
+108138 May  7 1996  zip201x.zip      Zip 2.0.1 exes for SCO Unix, zipfile format
+
+This version of UnZip has been compiled on SCO ODT 3.0 with max optimization
+and compatibility options.  It has been run on a number of V.3.2 and V.4.x
+systems without problems.
+
+Zip executables were retrieved from ftp://ftp.celestial.com/pub/sco-ports/unix/
+and repackaged in standard Info-ZIP format.  They do not support encryption.
+Note that "zip -y" fails to store symbolic links properly in version 2.0.1.
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send comments on SCO exes to Bill Davidsen: davidsen@tmr.com
+Send problem reports on Zip and UnZip to:   http://www.info-zip.org/zip-bug.html
+Send problem reports on gzip to:            gzip@prep.ai.mit.edu
+
+Last updated:  26 June 1997

@@ -1,0 +1,21 @@
+This directory contains executables for QNX 4 (Intel platform).
+
+  1001 Feb 22 2004  README                  This file you're reading...
+213261 Dec  1 1998  unz540xQ.sfx            QNX 4 UnZip 5.40 docs/exes
+                                            (self-extracting)
+   751 Dec  1 1998  unz540xQ.sfx.readme     QNX 4 UnZip 5.40 information
+153458 Dec  1 1998  unz540xQ.tar.gz         QNX 4 UnZip 5.40 docs/exes
+   736 Dec  1 1998  unz540xQ.tar.gz.readme  QNX 4 UnZip 5.40 information
+114049 Nov  6 1997  zip22xQ.zip             QNX 4 Zip 2.2 docs/exes
+   649 Nov  6 1997  zip22xQ.zip.readme      QNX 4 Zip 2.2 information
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/UNIX/QNX/ :
+
+106928 Aug  1 1996  zcr21x.zip       QNX Zip 2.1 docs/exes (with encryption)
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:   1 December 1998

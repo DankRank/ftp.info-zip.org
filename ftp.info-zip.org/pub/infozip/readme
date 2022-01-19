@@ -1,0 +1,64 @@
+This directory contains subdirectories with the latest official releases
+of Info-ZIP's software (C source code and selected compiled executables).
+
+	README		what you're reading right now
+
+	src/		source code for Zip, UnZip, WiZ, gzip, ship, etc.
+	doc/		license info and docs on zipfiles, deflate, etc.
+	OLD/		previously released sources and executables
+
+	*.html		web pages (via http://ftp.info-zip.org/pub/infozip/
+			           and http://www.info-zip.org/pub/infozip/)
+
+The following subdirectories contain executables for specific operating
+systems:
+
+	AMIGA/		Amiga
+	AOSVS/		AOS/VS
+	ATARI/		Atari
+	BEOS/		BeOS
+	FLEXOS/		FlexOS
+	HUMAN68K/	X68000/Human68k (Japanese)
+	MACOS/		Macintosh (Classic, OS X, etc.)
+	MSDOS/		DOS
+	MVS/		MVS
+	NOVELL/		Novell Netware
+	OS2/		OS/2
+	QDOS/		SMS/QDOS
+	RISCOS/		RISC OS (Acorn, etc.)
+	TANDEM/		Tandem/NSK
+	UNIX/		various Unix-like systems
+	VMCMS/		VM/CMS
+	VMS/		VMS/OpenVMS
+	WIN16/		Windows 3.x
+	WIN32/		Windows 95/98/ME/NT/2000/XP/etc.
+	WINCE/		Windows CE/Pocket PC
+
++-------------------------------------------------------------------------+
+| Due to U.S. Export Regulations, all cryptographic software on this      |
+| site is subject to the following legal notice:                          |
+|                                                                         |
+|    This site includes publicly available encryption source code         |
+|    which, together with object code resulting from the compiling of     |
+|    publicly available source code, may be exported from the United      |
+|    States under License Exception "TSU" pursuant to 15 C.F.R. Section   |
+|    740.13(e).                                                           |
+|                                                                         |
+| This legal notice applies to cryptographic software only.  Please see   |
+| the Bureau of Industry and Security (http://www.bis.doc.gov/) for more  |
+| information about current U.S. regulations.                             |
++-------------------------------------------------------------------------+
+
+(Yes, we're fully aware that ftp.info-zip.org is located in Germany.  But
+we also have mirror sites in the US and other countries.)
+
+Encryption binaries are currently available only from our European site,
+ftp://ftp.icce.rug.nl/infozip/ , but this will change in the near future.
+Note that all UnZip-related binaries already contain (or are supposed to
+contain) _de_cryption capability.
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+Send problem reports on gzip to:           support@gzip.org
+Send problem reports on zlib to:           zlib@gzip.org
+
+Last updated:  22 February 2004

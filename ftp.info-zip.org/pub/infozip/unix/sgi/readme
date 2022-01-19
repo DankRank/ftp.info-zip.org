@@ -1,0 +1,26 @@
+This directory contains executables for SGI IRIX 4.x (COFF format) and IRIX
+5.0 and later (ELF format).
+
+  1318 Feb 22 2004  README              what you're reading right now
+246249 Jun 22 1995  unz512x-coff.tar.Z  UnZip 5.12, IRIX 4.x exes, tar format
+183445 Jun 22 1995  unz512x-coff.zip    UnZip 5.12, IRIX 4.x exes, zipfile
+292255 Apr 15 2002  unz550x-elf.tar.Z   UnZip 5.5, IRIX 5.x/6.x exes, tarball
+220493 Apr 15 2002  unz550x-elf.zip     UnZip 5.5, IRIX 5.x/6.x exes, zipfile
+133400 Jun 22 1995  zip201x-coff.zip    Zip 2.0.1, IRIX 4.x exes (no encryption)
+122772 Apr 15 2002  zip23x-elf.zip      Zip 2.3, IRIX 5.x/6.x exes (no encrypt.)
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/UNIX/SGI/ :
+
+149446 Apr 15 2002  zcr23x-elf.zip      Zip 2.3, IRIX 5.x/6.x exes (w/encrypt.)
+
+The COFF executables were compiled under IRIX 4.0.5F but work under both 4.x
+and 5.x.  The ELF executables were compiled under IRIX 6.5 with the MIPSpro C
+compiler version 7.3.1.1m and should work under both 5.x and 6.x.  Thanks to
+Robert C. Atwood of Imperial College for the providing latter.
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  15 April 2002

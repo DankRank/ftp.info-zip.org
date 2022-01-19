@@ -1,0 +1,76 @@
+Originally from:
+
+	http://servicenews.symantec.com/cgi-bin/newsg...  [missing chars]
+	lgemein&replycount=1&sortby=BYTDATED&tpre=de&
+
+(scanned and forwarded courtesy of Michael Kilby @ http://www.gfab.de/)
+
+
+> Technische Unterstuetzung Virus Weed5850.0 nicht erkannt? (Dieter Lenz)
+> 
+> Autor:  Dieter Lenz
+> Datum:  05:56h, 2 Sep PST
+> Printed:  10.09.99  16:29
+> Version: NAV 5.0 fuer Win95/98
+> Betriebssystem: Windows 98
+> 
+> Die mit dem Produkt AntiVirus 5.0 gelieferte Notfalldiskette 
+> (virscanl.dat vom 29.07.98) erkennt angeblich einen Weed.5850.0-Virus. 
+> Norton-Antivirus erkennt diesen Virus nicht; ein derartiger Virus ist 
+> auch nicht in der Virusliste enthalten. Handelt es sich hier um einen 
+> echten Virus?
+> 
+> Autor:  Technical Support (04:06h, 3 Sep PST)
+> 
+> Sehr geehrter Herr Lenz, Im folgenden Auszug finden Sie mehr Informationen 
+> wegen dieses Weed Virus:
+> 
+> The Weed Virus Is Detected when Booting the Computer with the Emergency Disk
+> 
+> Module(s):  CLF
+> Operating System(s):  Windows 95, Windows 98
+> 
+> Situation:
+> 
+> You boot the computer from the Emergency disk provided with Norton Anti Virus 
+> version 5, and the NAVDX DOS scanner detects a file infected with the Weed 
+> virus. However, the NAVW32 Windows scanner does not detect this infection.
+> 
+> Solution:
+> 
+> The definitions on the Emergency disk do not contain the latest virus 
+> definitions, and this results in the false detection of the Weed virus. 
+> You should create a Rescue disk set with current definitions.
+> 
+> This was fixed in the 5.02 release, available on the 3.04 Solutions CD.
+>  
+> Internal Notes:
+> 
+> The NAV Emergency Boot Disk that has been shipping since August 1998 had this 
+> problem. This is the one that shipped with NAV 5.0 (Atomic) and later NAV 5.x 
+> versions, NAV Solution CD 3.02 & 3.03, and whatever other products the NAV 
+> Emergency Boot Disk ships with.
+> 
+> The good news is that we just fixed it. The new disk that does not have this 
+> problem is now in manufacturing and customers should get it with the above 
+> products & future products. There is no problem with the product itself -
+> just with the Emergency Boot Disk.
+> 
+> Mit freundlichen Gruessen, Dick Niezen
+> Symantec European Online Support
+> 
+> Alle Norton AntiVirus Online-Unterstuetzungsoptionen auf einen Blick:
+>   http://www.symantec.com/region/de/techsupp/products/ts_nav_gr.html
+> Elektronische Unterstuetzung:
+>   Technische Unterstuetzung (Deutsch):
+>     http://www.symantec.com/region/de/techsupp/index.html
+> Symantec AntiVirus Research Center Website:
+>   http://www.sarc.com/
+> Virendefinitionen:
+>   ftp://ftp.symantec.com/public/deutsch/virus_signaturen/norton_antivirus/
+> Updates:
+>   ftp://ftp.symantec.com/public/deutsch/produkten/norton_antivirus/
+> Kundendienst:
+>   http://www.symantec.com/region/de/custserv/index.html
+> Symantec Upgrade Center:
+>   http://www.symantec.com/region/de/purchase/upgrade.html

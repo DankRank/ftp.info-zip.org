@@ -1,0 +1,18 @@
+This directory contains executables and documentation for Intergraph CLIX.
+
+   928 Feb 22 2004  README              what you're reading right now
+129824 Jun 29 1997  gzip-1.1            gzip 1.1, CLIX exe (bare)
+293411 Jun 29 1997  unz512x.sfx         UnZip 5.12, CLIX exes, self-extracting
+176377 Jun 29 1997  unz512x.zip         UnZip 5.12, CLIX exes, plain zipfile
+129154 Jun 29 1997  zip21x.zip          Zip 2.1, CLIX exes (no encryption)
+
+Thanks to Alex Matulich (matuli_a@marlin.navsea.navy.mil) for providing the
+CLIX binaries, and to Jim Delahanty (jimd@gie.com) for forwarding them to us.
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+For gzip documentation and utility scripts, see the gzip 1.2.4 source archive.
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+Send problem reports on gzip to:           support@gzip.org
+
+Last updated:  6 November 1997

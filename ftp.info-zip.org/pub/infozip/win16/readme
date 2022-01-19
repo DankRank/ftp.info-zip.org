@@ -1,0 +1,22 @@
+This directory contains executables for Windows 3.x.
+
+  1043 Feb 22 2004  README        what you're reading right now
+ 90231 Dec 16 1997  unz532d.zip   UnZip 5.32, 16-bit DLL (for Borland C)
+329851 Dec 16 1997  wiz401x.exe   WiZ 4.01 graphical app (self-extracting)
+ 79085 Dec 16 1997  zip22d.zip    Zip 2.2, 16-bit DLL (for Borland C)
+
+The self-extracting files are in zip format.  You can simply run them
+at a DOS command prompt to extract into the current directory, or else
+use UnZip 5.x or PKUNZIP 2.04g or WizUnZip 2.x or WinZip 5.x (or later)
+to extract the archives directly without running them, as in:
+
+    unzip wiz401x.exe
+
+All Info-ZIP packages contain documentation.  Sources are in ../src .
+The DLL sources are included as a standard part of the Zip 2.2 and UnZip
+5.32 source distributions; the WiZ 4.01 GUI sources are bundled separately
+as wiz401.zip.  (Note that WiZ now performs both Zip and UnZip functions.)
+
+Send problem reports on Zip/UnZip/WiZ to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  18 December 1997

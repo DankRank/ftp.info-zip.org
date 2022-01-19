@@ -1,0 +1,30 @@
+20050227:
+   Due to e-mail overload, in mid-2004 Jean-loup abandoned the zlib
+   project and since then has been unresponsive (with one exception)
+   even to Mark Adler, his co-maintainer, even in light of known security
+   issues in zlib 1.2.1 (which, until a few days ago, was the last release
+   on Jean-loup's site, known both as http://www.gzip.org/zlib/ and as
+   http://www.zlib.org/).  THE ONLY OFFICIAL SITE FOR ZLIB is currently
+   http://www.zlib.net/ , maintained by Mark Adler.  As of this writing,
+   zlib 1.2.2 is the current release, with a non-security-related follow-on
+   in development.  PLEASE UPDATE ALL OLD LINKS!
+
+	GOOD:
+		http://www.zlib.net/
+
+	BAD (i.e., not guaranteed to be maintained or up to date):
+		http://www.info-zip.org/pub/infozip/zlib/
+		http://ftp.info-zip.org/pub/infozip/zlib/
+		ftp://ftp.info-zip.org/pub/infozip/zlib/
+		http://www.gzip.org/zlib/
+		http://gzip.org/zlib/
+		http://www.zlib.org/
+		http://zlib.org/
+
+20010519:
+   Due to the ongoing networking problems at FreeSoftware.com, the former
+   host for http://info-zip.org/pub/infozip/zlib/, the official zlib site
+   moved on 27 April 2001. The new site is http://www.gzip.org/zlib/ and is
+   maintained by Jean-loup Gailly. Please make a note of it! _This_ site is
+   no longer being updated (or mirrored from the new home site) and may go
+   away in the future.

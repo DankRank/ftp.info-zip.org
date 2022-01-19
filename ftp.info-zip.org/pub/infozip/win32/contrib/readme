@@ -1,0 +1,13 @@
+This directory contains contributed (third-party) files related to Win32
+versions of Info-ZIP's Zip and UnZip.
+
+   537 May 25 2003  README            what you're reading right now
+  2239 Mar  3 1999  MVZipUnzip.msg    e-mail from author of MVZipUnzip OCX
+ 84428 Mar  1 1999  MVZipUnzip.zip    ActiveX UnZip control (OCX) for VB 4,5,6
+
+Thanks to Jorge Serrano [Pérez] for providing the ActiveX control.  See
+http://www.portalvb.com/AXMVAp.asp?Ap=0010 for the MVZipUnzip home site (as
+of May 2003), from which the corresponding version of Unzip32.dll and the
+MS VB5 runtime may be downloaded.  (Note that the site is in Spanish.)
+
+Last updated:  25 May 2003

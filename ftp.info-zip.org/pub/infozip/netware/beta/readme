@@ -1,0 +1,24 @@
+These are BETA executables for Novell Netware!  We don't even know what
+version they work with (probably 3.x), but they're all we have for now.
+
+These executables are provided without warranty, blah blah blah.  Use at
+your own risk (but we believe them to be reasonably functional).
+
+==============================================================================
+
+The two Zip executables (Zip and ZipNote) are from a relatively recent
+(March 1995) port of Zip "2.0j" beta from 16 September 1994.  The UnZip
+executable is from the older 1993 port of UnZip 5.0.
+
+The iz-novell.zip archive contains all three executables:
+
+Archive:  iz-novell.zip   75599 bytes   4 files
+-rw-r--r--  2.2 unx  136975 bx defX  9-Sep-93 15:31 unzip.nlm
+-rw-r--r--  2.2 unx   68745 bx defX  9-Mar-95 15:19 zip.nlm
+-rw-r--r--  2.2 unx   21359 bx defX  9-Mar-95 14:07 zipnote.nlm
+-rw-rw-r--  2.2 unx    1072 tx defX  8-Jul-97 20:58 README
+4 files, 228151 bytes uncompressed, 75071 bytes compressed:  67.1%
+
+==============================================================================
+
+GRR 970708

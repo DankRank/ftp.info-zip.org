@@ -1,0 +1,36 @@
+This directory contains SunOS and Solaris executables for SPARC and Intel x86
+hardware (32-bit only).
+
+  1994 Feb 22 2004  README             what you're reading right now
+240193 Jun  3 1996  gzip124x.tar.Z     gzip 1.2.4, SunOS exes/docs, tar archive
+195440 Feb 10 1994  gzip124x.zip       gzip 1.2.4, SunOS exes/docs, zipfile
+208685 Nov  8 1997  unz532x-41x.tar.Z  UnZip 5.32, SunOS 4.x exes/docs, tarball
+162289 Nov  8 1997  unz532x-41x.zip    UnZip 5.32, SunOS 4.x exes/docs, zipfile
+255675 Nov 22 2000  unz541x-sol.tar.Z  UnZip 5.41, Solaris/SPARC 2.x exes/docs
+197112 Jul 10 2000  unz541x-sol.zip    UnZip 5.41, Solaris/SPARC 2.x exes/docs
+144226 Nov 22 2000  unz541x-x86.tar.Z  UnZip 5.41, Solaris/x86 2.x exes/docs
+157150 Jul 12 2000  unz541x-x86.zip    UnZip 5.41, Solaris/x86 2.x exes/docs
+ 94295 Nov  7 1997  zip22x-41x.zip     Zip 2.2, SunOS 4.x exes (no encryption)
+ 88523 Jul 10 2000  zip23x-sol.zip     Zip 2.3, Solaris/SPARC exes (no encrypt.)
+ 83529 May 22 2000  zip23x-x86.zip     Zip 2.3, Solaris/x86 exes (no encrypt.)
+
+Binaries with encryption support are available from
+ftp://ftp.icce.rug.nl/infozip/UNIX/SUN/ :
+
+129862 Nov  9 1997  zcr22x-41x.zip     Zip 2.2, SunOS 4.x exes (with encryption)
+127574 Nov 15 1997  zcr22x-sol.zip     Zip 2.2, Solaris/SPARC exes (w/encrypt.)
+103685 Nov  8 1997  zcr22x-x86.zip     Zip 2.2, Solaris/x86 exes (w/encryption)
+
+The SunOS 4.x executables have been tested under SunOS 4.1.4 and Solaris 2.5.1
+and are virtually indistinguishable in speed from native Solaris 2.x binaries.
+There have been reports that they don't work well under Solaris 2.4, however.
+
+The x86 binaries were downloaded from The Written Word's free Open Source site
+(http://www.thewrittenword.com/free/downloads/).
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+Send problem reports on gzip to:           support@gzip.org
+
+Last updated:  22 November 2000

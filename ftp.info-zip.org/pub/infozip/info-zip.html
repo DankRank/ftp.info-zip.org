@@ -1,0 +1,652 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Info-ZIP Home Page</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+
+<!-- http://www.w3.org/TR/REC-CSS2/box.html -->
+<STYLE TYPE="text/css">
+  P { margin-bottom: 0em }
+  UL {
+    margin-bottom: 0em;
+    margin-top: 0em;
+    list-style: disc;
+  }
+  LI {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+</STYLE>
+
+<LINK REV="made" HREF="http://pobox.com/~newt/greg_contact.html">
+<!--  Copyright (c) 1995-2008 Greg Roelofs.  -->
+</HEAD>
+
+
+<BODY>
+<!-- BODY BGCOLOR="#dfcf7f" -->
+<H1 ALIGN="center">
+<IMG WIDTH=500 HEIGHT=105 ALT="[Info-ZIP]"
+ SRC="images/InfoZIP-gold2.png">
+</H1>
+
+<!-- H3 ALIGN="right"> <A HREF="FAQ.html#Y2K">Y2K</A> </H3 -->
+<HR>
+
+<P>
+<BLOCKQUOTE>
+   <B>LATEST RELEASES</B>:
+   <I><B>Zip&nbsp;3.00</B></I> was released on 7&nbsp;July 2008.
+   <I><B>WiZ&nbsp;5.03</B></I> was released on 11&nbsp;March 2005.
+   <I><B>UnZip&nbsp;5.52</B></I> was released on 27&nbsp;February 2005.
+   <I><B>MacZip&nbsp;1.06</B></I> was released on 22&nbsp;February 2001.
+   See the <A HREF="Zip.html">Zip</A>, <A HREF="UnZip.html">UnZip</A> and
+   <A HREF="WiZ.html">WiZ</A> pages for current status and download locations.
+
+   <P>
+   In addition, a new set of <A HREF="http://www.info-zip.org/board/board.pl"
+   ><B>discussion forums</B></A> was set up in October 2007.  These replace
+   the older <A HREF="http://www.quicktopic.com/27/H/V6ZQZ54uKNL">QuickTopic
+   forum</A>, which was overrun by spam.  (The spam postings have since been
+   deleted, but further posts to the old forum are permanently disabled.)
+</BLOCKQUOTE>
+
+<!--
+<P>
+<HR>
+
+<P>
+<CENTER>
+<TABLE WIDTH="70%" BORDER=0 CELLPADDING=10>
+   <TR BGCOLOR="#000000">
+      <TD>
+         <FONT COLOR="#ffffff"> <B>Info-ZIP mourns the passing of Phil Katz,
+         who died on 14&nbsp;April 2000.  Phil was one of the great shareware
+         developers of the 1980s, and Info-ZIP owes its very existence to the
+         zipfile format he created.</B>
+         </FONT>
+      </TD>
+   </TR>
+</TABLE>
+</CENTER>
+ -->
+
+<!--
+<P>
+<HR>
+
+<P>
+<CENTER>
+<TABLE WIDTH="70%" BORDER=0 CELLPADDING=10>
+   <TR BGCOLOR="#000000">
+      <TD>
+         <FONT COLOR="#ffffff"> <B>Info-ZIP is very sorry to report that one
+         of our core team members, <A HREF=
+         "http://www.speedproject.de/enu/team/rainer.html"
+         ><FONT COLOR="#ffff66">Rainer Nausedat</FONT></A>,
+         died on 17&nbsp;November 2004.  Rainer was a highly respected coder
+         and worked on a number of compression tools; his contribution of
+         64&nbsp;KB deflate support to the Info-ZIP project was but a small
+         part of his work.  He will be missed.</B>
+         </FONT>
+      </TD>
+   </TR>
+</TABLE>
+</CENTER>
+ -->
+
+<P>
+<HR>
+
+<P>
+<H1>About Info-ZIP</H1>
+
+<P>
+Info-ZIP is a diverse, Internet-based workgroup of about 20 primary
+authors and over one hundred beta-testers, formed in 1990 as a mailing
+list hosted by Keith Petersen on the original SimTel site at the White
+Sands Missile Range in New Mexico.
+
+<P>
+Info-ZIP's purpose is to provide free, portable, high-quality versions of the
+<A HREF="Zip.html"><B>Zip</B></A> and <A HREF="UnZip.html"><B>UnZip</B></A>
+compressor-archiver utilities that are compatible with the DOS-based
+<B>PKZIP</B> by <A HREF="http://www.pkware.com/">PKWARE, Inc.</A>
+
+<P>
+Info-ZIP supports hardware from microcomputers all the way up to Cray
+supercomputers, running on almost all versions of Unix, VMS, OS/2,
+Windows 9x/NT/etc. (a.k.a. Win32), Windows 3.x, Windows CE, MS-DOS, AmigaDOS,
+Atari TOS, Acorn RISC OS, BeOS, Mac OS, SMS/QDOS, MVS and OS/390 OE, VM/CMS,
+FlexOS, Tandem NSK and Human68K (Japanese).  There is also some (old) support
+for LynxOS, TOPS-20, AOS/VS and Novell NLMs.  Shared libraries (DLLs) are
+available for Unix, OS/2, Win32 and Win16, and graphical interfaces are
+available for Win32, Win16, WinCE and Mac OS.
+<!-- VMOS and VxWorks ports may or may not be underway...  [comm. 20001230] -->
+<!-- LynxOS port by Giuseppe Guerrini, giusguerrini@racine.ra.it, 19980907 -->
+
+<P>
+Info-ZIP code has been incorporated into a number of third-party products as 
+well, both commercial and freeware.  Some of the more interesting ones (well,
+historically speaking) include
+the use of <A HREF="UnZip.html"><B>UnZip</B></A> code in the <I>unzip.dll</I>
+distributed with IBM's <B>OS/2 Warp BonusPak</B> and <B>WebExplorer</B>,
+as part of the reinstallation code for the IBM Aptivas preloaded with <B>OS/2
+Warp</B>, and as part of IBM's Infoprint product.  Sun used Info-ZIP's
+self-extractor to distribute the NT version of their <B>HotJava</B> browser,
+Novell uses UnZip for <B>NetWare 6</B> installation<!--, Wind River
+uses UnZip to distribute <B>VxWorks</B>-->, and SAP includes it in
+<B>Business One</B>.
+Various Windows products such as <B>WinZip</B>
+and the <B>DynaZIP</B> DLLs incorporate Info-ZIP code, too.  And let us not
+forget <B>Pretty Good Privacy</B> (PGP), an excellent encryption program that
+uses Info-ZIP code as a first step in encrypting files.  Info-ZIP's primary
+compression engine has also been spun off into the free
+<A HREF="http://zlib.net/"><B>zlib</B> compression library</A>, used in
+<B>Netscape/Mozilla/Firefox</B>, the <B>Linux</B> kernel, <B>Windows</B>,
+<B>Java</B>, virtually all <A HREF="http://www.libpng.org/pub/png/"
+><B>PNG</B></A>-supporting software, and countless other products.
+
+<P>
+Info-ZIP can be reached by a web-based form, but you'll have to read our
+<A HREF="FAQ.html"><B>Frequently Asked Questions</B></A> page to find out how.
+Our two primary web sites are hosted by our very own Hunter Goatley and by
+the most excellent <A HREF="http://sourceforge.net/">SourceForge</A>.
+<!--
+Our primary ftp site is also hosted by Hunter Goatley.
+ -->
+<!--
+Our primary ftp site is hosted by the fine folks at <A HREF=
+"http://www.leo.org/leo_home_en.html">LEO</A>, the <A HREF=
+"http://www.informatik.tu-muenchen.de/home_e.html">Technical University
+of Munich</A>'s huge <I>Link Everything Online</I> archive.
+ -->
+Secondary distribution sites are hosted by
+   the <A HREF="http://www.ctan.org/">Comprehensive TeX Archive Network</A>.
+<!--
+   the <A HREF="http://www.mirrorservice.org/">UK Mirror Service</A>,
+ -->
+<!--
+   <A HREF="http://www.uu.net/">UUNET Technologies</A>,
+ -->
+<!--
+   <A HREF="http://mirror.switch.ch/">Swiss SunSITE</A>,
+ -->
+<!--
+   <A HREF="http://sourceforge.net/">SourceForge</A>,
+and others (see below).
+ -->
+
+<P>
+<HR>
+
+<P>
+<H2><A NAME="Downloads">Info-ZIP Downloads</A></H2>
+
+<P>
+<DL>
+        <DT><A HREF="UnZip.html"><IMG WIDTH=40 HEIGHT=40 BORDER=0 ALIGN="middle"
+            SRC="images/zip-32-40t.png" ALT="[UnZip icon]"><B>UnZip</B></A> -
+            for extracting and viewing files in <I>.zip</I> archives.  Also
+            includes:
+        </DT>
+        <UL>
+            <LI><B>ZipInfo</B> - for detailed zipfile information
+            <LI><B>fUnZip</B> - for extracting in a pipe
+            <LI><B>UnZipSFX</B> - for creating self-extracting archives
+        </UL>
+
+        <P>
+        <DT><A HREF="Zip.html"><IMG WIDTH=40 HEIGHT=40 BORDER=0 ALIGN="middle"
+            SRC="images/zip-32-40t.png" ALT="[Zip icon]"><B>Zip</B></A> -
+            a compressor/archiver for creating and modifying zipfiles.  Also
+            includes:
+        </DT>
+        <UL>
+            <LI><B>ZipNote</B> - for adding/deleting comments to zipfiles
+            <LI><B>ZipSplit</B> - for splitting zipfiles
+            <LI><B>ZipCloak</B> - for encrypting and decrypting (with optional
+                <B>zcrypt</B> add-on package)
+        </UL>
+
+        <P>
+        <DT><A HREF="WiZ.html"><IMG WIDTH=40 HEIGHT=40 BORDER=0 ALIGN="middle"
+            SRC="images/zip-32-40t.png" ALT="[WiZ icon]"><B>WiZ</B></A> -
+            a combination Zip/UnZip graphical front end for Windows platforms.
+        </DT>
+
+        <P>
+        <DT><A HREF="http://www.haase-online.de/dirk/maczip/"
+            ><IMG WIDTH=40 HEIGHT=40 BORDER=0 ALIGN="middle"
+            SRC="images/zip-32-40t.png" ALT="[MacZip icon]"><B>MacZip</B></A> -
+            a combination Zip/UnZip graphical front end for Mac OS.
+        </DT>
+
+</DL>
+
+<P>
+<HR>
+
+<P>
+<H2><A NAME="Links">Info-ZIP Links</A></H2>
+
+<P>
+<UL>
+    <LI><A HREF="license.html"><B>Info-ZIP License</B></A> - our new(er),
+        BSD-like (i.e., very liberal) license
+
+    <P>
+    <LI><A HREF="FAQ.html"><B>Info-ZIP FAQ</B></A> - Frequently Asked Questions
+        about how and where to download things, what about commercial usage,
+        and anything else we think of
+
+    <P>
+    <LI><A HREF="FAQ.html#lists"><B>Info-ZIP Mailing Lists</B></A> - how to
+        subscribe to our announcements list (very low traffic) or general
+        discussion list (relatively low traffic)
+
+    <P>
+    <LI><B>Info-ZIP Internet Sites</B> - we're everywhere! we're everywhere!
+    <UL>
+
+    <P>
+        <LI><B>web pages</B>:
+        <UL>
+            <LI><A HREF="http://www.info-zip.org/pub/infozip/"
+               >www.info-zip.org</A> (US) - <I>Info-ZIP's home site</I>
+<!--
+               <DL>
+                  <DD>
+                  <FONT COLOR="#cc0000"><B>NOTE:  the Info-ZIP site moved to
+                  a new domain on 2&nbsp;March 2000, and the old, stale site
+                  was finally turned off on 3&nbsp;May 2000, at the same time
+                  that HTTP access on the new site was enabled.  It may take
+                  a few weeks for all of our mirror sites to get updated
+                  properly.</B>
+                  </FONT>
+                  </DD>
+               </DL>
+ -->
+             <A HREF="http://sourceforge.net/"><IMG WIDTH=88 HEIGHT=31
+              SRC="http://sourceforge.net/sflogo.php?group_id=118012&amp;type=1"
+              ALT="[primary site hosted by SourceForge]" ALIGN="right"></A>
+            <LI><A HREF="http://infozip.sourceforge.net/"
+               >infozip.sourceforge.net</A> (US) - <I>Info-ZIP's home
+               site 2</I>
+               <!-- NEW 20041211 -->
+<!--
+            <LI><A HREF="http://ftp.info-zip.org/pub/infozip/"
+               >ftp.info-zip.org via HTTP</A> (Germany) - <I>Info-ZIP's home
+               site 3</I>
+ -->
+               <!-- NEW 20030328 (DEAD mid-2006) -->
+            <LI><A HREF="http://www.ctan.org/tex-archive/tools/zip/info-zip/"
+               >www.ctan.org</A> (US) and <A HREF=
+               "http://www.ctan.org/tex-archive/CTAN.sites?action=/index.html"
+               >CTAN mirrors</A>
+               <FONT COLOR="#cc0000"><B>[FROZEN]</B></FONT>
+               <!-- was "http://www.ctan.org/ctansite.txt" -->
+               <!-- FROZEN as of 20070126 -->
+            <LI><A HREF=
+               "http://www.mirrorservice.org/sites/ftp.info-zip.org/pub/infozip/"
+               >www.mirrorservice.org</A> (UK)
+               <!-- was
+               "http://www.mirror.ac.uk/sites/ftp.freesoftware.com/pub/infozip/"
+                (UPDATED 20020413) -->
+               <!-- was
+               "http://www.mirror.ac.uk/sites/ftp.info-zip.org/pub/infozip/"
+                (UPDATED 20040803) -->
+<!--
+            <LI><A HREF=
+               "http://sunsite.org.uk/Mirrors/ftp.info-zip.org/pub/infozip/"
+               >sunsite.org.uk</A> (UK)
+ -->
+               <!-- same as sunsite.doc.ic.ac.uk or src.doc.ic.ac.uk -->
+               <!-- http://sunsite.org.uk/packages/zip/ works, too -->
+               <!-- http://sunsite.org.uk/Mirrors/ftp.cdrom.com/pub/infozip/ -->
+               <!-- was "http://sunsite.org.uk/packages/infozip/" -->
+               <!-- was 
+               "http://sunsite.org.uk/Mirrors/ftp.freesoftware.com/pub/infozip/"
+                (UPDATED 20020413) -->
+<!--
+            <LI><A HREF="http://mirror.switch.ch/ftp/mirror/infozip/"
+               >mirror.switch.ch</A> (Switzerland)
+               UPDATED 20050908 - was sunsite.cnlab-switch.ch
+               GONE 20061123 by request - LEO shutting down
+ -->
+            <LI><A HREF="http://info-zip.ipmedia.de/"
+               >info-zip.ipmedia.de</A> (Germany)
+               <!-- NEW 20070320 - stephan.paulus/t-online.de, 20070131; also
+                    info/citimedia.de, 20070219 -->
+               <!-- FROZEN as of 20070120 (never updated beyond init.) -->
+               <!-- fixed as of 20070731 -->
+<!--
+            <LI><A HREF="http://info-zip.cs-network.de/"
+               >info-zip.cs-network.de</A> (Germany)
+               <! - NEW 20070917 - Christian Schmidt webprod/gmx.de 20070916 - >
+ -->
+<!--
+            <LI><A HREF="http://swamp.chl.chalmers.se/pub/unix/compression/infozip/Info-ZIP.html"
+               >swamp.chl.chalmers.se</A> (Sweden)
+               GONE 20040222
+            <LI><A HREF=
+               "http://public.www.planetmirror.com/pub/infozip/"
+               >public.www.planetmirror.com</A> (Australia)
+               GONE 20070727 (probably much earlier)
+            <LI><A HREF=
+               "http://ilm.mech.unsw.edu.au/tex-archive/tools/info-zip/"
+               >ilm.mech.unsw.edu.au</A> (Australia)
+               GONE 20070727 (probably much earlier)
+            <LI><A HREF="http://mirror.aarnet.edu.au/pub/infozip/"
+               >mirror.aarnet.edu.au</A> (Australia< -; accessible to Australia/NZ only- >)
+               FROZEN as of 20051017 (but finally visible worldwide)
+            <LI><A HREF=
+               "http://www.ring.gr.jp/pub/text/CTAN/tools/zip/info-zip/Info-ZIP.html"
+               >www.ring.gr.jp</A> or <A HREF=
+               "ftp://ftp.ring.gr.jp/pub/text/CTAN/tools/zip/info-zip/Info-ZIP.html"
+               >ftp.ring.gr.jp</A> (Japan)
+               FROZEN as of 20060714
+ -->
+        </UL>
+
+        <P>
+        <LI><B>files</B>:
+        <UL>
+            <LI><A HREF=
+               "http://sourceforge.net/project/showfiles.php?group_id=118012"
+               >sourceforge.net</A> (US, Ireland, France, Belgium, Switzerland,
+               Germany, Australia, etc.; source and (some) current binaries)
+               - <I>Info-ZIP's home site</I>
+            <LI><A HREF="ftp://ftp.info-zip.org/pub/infozip/"
+               >ftp.info-zip.org</A> (US) - <I>Info-ZIP's other home site</I>
+               <DL>
+                  <DD>
+<!--
+                  <FONT COLOR="#cc0000"><B>NOTE:  LEO.org, the host for
+                  Info-ZIP's main ftp site, suffered a major RAID failure on
+                  6&nbsp;December 2004.  As of 10&nbsp;January it appears to
+                  be functioning properly again, but watch the <A HREF=
+                  "http://www.leo.org/neues/maintenance_en.html">LEO maintenance
+                  page</A> for updates and, if necessary, use one of
+                  the mirrors listed below.</B></FONT>
+
+                  <FONT COLOR="#cc0000"><B>NOTE:  LEO.org, the host for
+                  Info-ZIP's main ftp site, suffered another major RAID failure
+                  in late August 2005.  It is back up as of mid-October, but
+                  no one can say whether it will remain that way.  Check the
+                  <A HREF="http://www.leo.org/">LEO home page</A> for updates,
+                  and if necessary, please use
+                  one of the mirrors listed below.</B></FONT>
+
+                  <FONT COLOR="#cc0000"><B>NOTE:  <! - gabe.kjsl.com, - > the
+                  host for Info-ZIP's main ftp site died the final death in
+                  late July 2007.  We're still looking for a replacement; in
+                  the meantime, please use SourceForge or
+                  one of the mirrors listed below.</B></FONT>
+
+TODO:  update all web pages to use lowercase-only file paths (argh...)
+       verify with Hunter first
+ -->
+                  </DD>
+               </DL>
+<!--
+            <LI><A HREF="ftp://ftp.icce.rug.nl/infozip/"
+               >ftp.icce.rug.nl</A> (Netherlands) - <I>Info-ZIP's home site for
+               encryption stuff</I>
+ -->
+            <LI><A HREF=
+               "http://www.mirrorservice.org/sites/ftp.info-zip.org/pub/infozip/"
+               >www.mirrorservice.org</A> (UK)
+               <!-- was
+               "http://www.mirror.ac.uk/sites/ftp.freesoftware.com/pub/infozip/"
+                (UPDATED 20020413) -->
+               <!-- was
+               "http://www.mirror.ac.uk/sites/ftp.info-zip.org/pub/infozip/"
+                (UPDATED 20040803) -->
+               <!-- MOVED from "web pages" to "files" 20080226 -->
+<!--
+            <LI><A HREF="ftp://ftp.uu.net/pub/archiving/zip/"
+               >ftp.uu.net</A> (US)
+            <LI><A HREF="ftp://mirror.aarnet.edu.au/pub/infozip/"
+               >mirror.aarnet.edu.au</A> (Australia; accessible to Australia/NZ
+               only)
+               FROZEN as of 20051017 (but finally visible worldwide)
+ -->
+            <LI><A HREF="ftp://tug.ctan.org/tex-archive/tools/zip/info-zip/"
+               >tug.ctan.org</A> (US)
+               <FONT COLOR="#cc0000"><B>[FROZEN]</B></FONT>
+               <!-- FROZEN as of 20070126 -->
+            <LI><A HREF="ftp://ftp.tex.ac.uk/tex-archive/tools/zip/info-zip/"
+               >ftp.tex.ac.uk</A> (UK)
+               <FONT COLOR="#cc0000"><B>[FROZEN]</B></FONT>
+               <!-- FROZEN as of 20070126 -->
+            <LI><A HREF="ftp://ftp.dante.de/tex-archive/tools/zip/info-zip/"
+               >ftp.dante.de</A> (Germany)
+               <FONT COLOR="#cc0000"><B>[FROZEN]</B></FONT>
+               <!-- FROZEN as of 20070126 -->
+<!--
+            <LI><A HREF="ftp://dante.ctan.org/tex-archive/tools/zip/info-zip/"
+               >dante.ctan.org</A> (Germany)
+               FROZEN as of 20060714
+            <LI><A HREF="ftp://cam.ctan.org/tex-archive/tools/zip/info-zip/"
+               >cam.ctan.org</A> (UK)
+               FROZEN as of 20060714
+            <LI><A HREF=
+               "ftp://ftp.mirrorservice.org/sites/ftp.info-zip.org/pub/infozip/"
+               >ftp.mirrorservice.org</A> (UK)
+ -->
+              <!-- "ftp://ftp.mirror.ac.uk/sites/ftp.cdrom.com/pub/infozip/" -->
+              <!-- was
+                "ftp://ftp.mirror.ac.uk/sites/ftp.freesoftware.com/pub/infozip/"
+                (UPDATED 20020413) -->
+              <!-- was
+                "ftp://ftp.mirror.ac.uk/sites/ftp.info-zip.org/pub/infozip/"
+                (UPDATED 20040803) -->
+               <!-- FROZEN as of 20060714 -->
+<!--
+            <LI><A HREF=
+               "ftp://sunsite.org.uk/Mirrors/ftp.info-zip.org/pub/infozip/"
+               >sunsite.org.uk</A> (UK)
+ -->
+               <!-- same as sunsite.doc.ic.ac.uk or src.doc.ic.ac.uk -->
+               <!-- ftp://sunsite.org.uk/Mirrors/ftp.cdrom.com/pub/infozip/ -->
+               <!-- ftp://sunsite.org.uk/packages/infozip/ (symlink) fails -->
+               <!-- ftp://sunsite.org.uk/packages/zip/ (symlink) fails -->
+<!--
+            <LI><A HREF="ftp://mirror.switch.ch/mirror/infozip/"
+               >mirror.switch.ch</A> (Switzerland)
+               GONE 20061123 by request - LEO shutting down
+            <LI><A HREF="ftp://sunsite.icm.edu.pl/pub/unix/archiving/info-zip/"
+               >sunsite.icm.edu.pl</A> (Poland)
+               FROZEN as of 20060714
+            <LI><A HREF=
+               "ftp://sunsite.icm.edu.pl/pub/unix/archiving/info-zip-crypt/"
+               >sunsite.icm.edu.pl</A> (Poland) - <I>encryption mirror</I> (old)
+ -->
+               <!-- still actively mirroring from ICCE as of 20070727, but
+                    no updates to ICCE in several years -->
+               <!-- messages exchanged with Frank Brokken ~20070731; option to
+                    restore access -->
+        </UL>
+    </UL>
+
+    <P>
+    <LI><A HREF="#People"><B>Info-ZIP People</B></A> - who we are, where we are
+        and what we do (below)
+
+    <P>
+    <LI><A HREF="http://www.info-zip.org/pub/infozip/people/gallery.html"
+        ><B>Info-ZIP Rogue's Gallery</B></A> - scary (old) pictures of us
+
+    <P>
+    <LI><A HREF="Info-ZIP2.html#News"><B>Info-ZIP News</B></A> - recent news and
+        happenings involving Info-ZIP and/or its members
+
+    <P>
+    <LI><A HREF="Info-ZIP2.html#Imposters"><B>Zip "Imposters"</B></A> - other
+        programs called <I>Zip</I>
+
+    <P>
+    <LI><A HREF="Info-ZIP2.html#RelatedLinks"><B>Related Links</B></A> - other
+        compression and archiver resources, such as PKWARE and PNG
+</UL>
+
+<P>
+<A NAME="People">
+<HR>
+</A>
+
+<P>
+<H2>
+Info-ZIP People <IMG WIDTH=32 HEIGHT=32 SRC="images/calvin.png" ALIGN=absbottom>
+</H2>
+
+<P>
+The core Info-ZIP group consists of programmers from six countries on three
+continents:
+
+<P>
+<UL>
+   <LI><B>Ed Gordon</B> (US); Zip maintainer
+   <LI><B>Christian Spieler</B> (Germany); UnZip maintainer; Win32, DOS
+   <LI><B>Mike White</B> (US); WiZ maintainer; Windows DLLs
+   <LI><B>Dirk Haase</B> (Germany); MacZip maintainer
+
+   <P>
+   <LI><B>Michael Cleary</B> (US?); MVS
+   <LI><A HREF="http://www.goatley.com/hunter/"
+       ><B>Hunter Goatley</B></A> (US); VMS, mailing list administrator,
+       primary web-site host
+       <!-- was "http://www.madgoat.com/hunter.html" -->
+   <LI><B>Ian Gorman</B> (Canada); VM/CMS, MVS (OS/390 Base)
+   <LI><B>Greg Hartwig</B> (US); VM/CMS
+   <LI><A HREF="http://www.daria.co.uk/"
+       ><B>Jonathan Hudson</B></A> (UK); SMS/QDOS, VMS
+       <!-- was "http://www.jrhudson.demon.co.uk/" -->
+   <LI><A HREF="http://www.paulkienitz.net/"
+       ><B>Paul Kienitz</B></A> (US); Amiga, Win32
+       <!-- was "http://gning.net/"; now gning.org or paulkienitz.net -->
+   <LI><B>Johnny Lee</B> (Canada); DOS, Win32
+   <LI><A HREF="http://pobox.com/~stevemil/"
+       ><B>Steve P. Miller</B></A> (US); Windows CE
+   <LI><B>Keith Owens</B> (Australia); MVS, Fujitsu MSP
+   <LI><A HREF="http://www.ars.de/~rommel/"
+       ><B>Kai Uwe Rommel</B></A> (Germany); OS/2
+   <LI><B>Steve Salisbury</B> (US); Win32
+   <LI><A HREF="http://antinode.org/"
+       ><B>Steven M. Schweda</B></A> (US); VMS
+   <LI><A HREF="http://www.kyrenia.co.uk/"
+       ><B>Dave Smith</B></A> (UK); Tandem NSK
+   <LI><A HREF="http://www.cs.toronto.edu/~cosmin/"
+       ><B>Cosmin Truta</B></A> (Canada); Zip and UnZip maintenance releases
+   <LI><B>Onno van der Linden</B> (Netherlands); former Zip maintainer
+   <LI><B>Paul von Behren</B> (US); OS/390 OpenEdition
+</UL>
+
+<P>
+If you're brave enough, you can check out the
+<A HREF="http://www.info-zip.org/pub/infozip/people/gallery.html">Info-ZIP
+Rogue's Gallery</A> and see what some of us (used to) look like.  It's fairly
+hideous.
+
+<P>
+Former members of the core Info-ZIP group (i.e., those who no longer even
+pretend to be active) include:
+
+<P>
+<UL>
+   <LI><A HREF="http://alumnus.caltech.edu/~madler/"
+       ><B>Mark Adler</B></A> (US); original Zip author; UnZip decompression
+       <!--
+           Mark is also hosting the Info-ZIP World-Wide Web pages on his
+           A HREF="http://quest.jpl.nasa.gov/" NeXT /A  computer at the
+           A HREF="http://www.jpl.nasa.gov/" Jet Propeller Laboratory /A  (JPL).
+         -->
+       <!-- was "http://www.alumni.caltech.edu/~madler/" -->
+   <LI><A HREF="http://www.info-zip.org/pub/infozip/people/jbush.html"
+       ><B>John Bush</B></A> (US); Amiga, Solaris
+   <LI><B>Karl Davis</B> (Australia); Acorn RISC OS
+   <LI><B>Harald Denker</B> (Germany); Atari, MVS
+   <LI><A HREF="http://gailly.net/"
+       ><B>Jean-loup Gailly</B></A> (France); Zip compression; former Zip
+       maintainer/co-author; Unix, DOS [aussi
+       <A HREF="http://gailly.net/index-f.html">en fran&ccedil;ais</A>]
+       <!-- fran&#231;ais works, too, at least under X -->
+       <!-- was "http://www.teaser.fr/~jlgailly/" and ".../index-f.html" -->
+   <LI><B>Robert Heath</B> (US); Windows GUI
+   <LI><A HREF="http://pobox.com/~chrish/"
+       ><B>Chris Herborth</B></A> (Canada); QNX, BeOS, formerly Atari
+       <!-- was "http://www.qnx.com/~chrish/" -->
+   <LI><B>David Kirschbaum</B> (US); original UnZip maintainer
+       <!-- was "http://home1.gte.net/kirschd/" -->
+   <LI><B>Igor Mandrichenko</B> (Russia/Ukraine); VMS
+   <LI><A HREF="http://bounce.to/sergio/"
+       ><B>Sergio Monesi</B></A> (Italy); Acorn RISC OS
+   <LI><A HREF="http://www.speedproject.de/enu/team/rainer.html"
+       ><B>Rainer Nausedat</B></A> (Germany); 64KB deflate
+   <LI><B>George Petrov</B> (Netherlands); MVS, VM/CMS
+   <LI><A HREF="http://pobox.com/~newt/"
+       ><B>Greg Roelofs</B></A> (US); former UnZip maintainer/co-author; Unix,
+       OS/2, DOS, early VMS port
+   <LI><B>Antoine Verheijen</B> (Canada); Macintosh
+   <LI><A HREF="http://www.richw.org/"
+       ><B>Rich Wales</B></A> (US); original Zip co-author
+       <!-- was "http://www.webcom.com/richw/" -->
+</UL>
+
+<P>
+In addition, Info-ZIP would like to tip our collective hat to
+<A HREF="mailto:71150.2731@compuserve.com"><B>Samuel H. Smith</B></A>, the
+gentleman who wrote the original MS-DOS <B>unzip</B> on which Info-ZIP's
+<B>UnZip 3.0</B> was based--and who kindly made the source code available
+for free.  Even though virtually all of his code has by now been rewritten
+from scratch, Info-ZIP still owes Mr. Smith a debt of gratitude for getting
+us into this mess.  A package of virtual chocolate-chip cookies is in the 
+e-mail.
+<IMG WIDTH=16 HEIGHT=16 SRC="images/smile_happy.png" ALT=":-)">
+
+<P>
+<HR>
+Last updated 8 July 2008.  Web page (occasionally) maintained by Greg Roelofs,
+but please direct <B>all comments and questions</B> to the Info-ZIP authors at
+the address/bug page given in the <A HREF="FAQ.html">FAQ</A>.
+<HR>
+
+<!--
+ P 
+Total number of hits on Info-ZIP pages since 4 May 1995: &nbsp; 
+ FONT SIZE="+2"  B 408144 /B  /FONT  &nbsp; &nbsp; &nbsp; &nbsp; 
+this page: &nbsp;  FONT SIZE="+2"  B 181158 /B  /FONT  BR 
+(Numbers represent only HTML hits at the
+  A HREF="http://www.cdrom.com/pub/infozip/" primary site /A  as of
+ Dec 31 14:01 PST.)
+ -->
+
+<!--
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0>
+  <TR>
+    <TD ALIGN="left">
+ -->
+      <FONT SIZE="-1">
+      Copyright &#169; 1995-2008
+      <A HREF="http://pobox.com/~newt/">Greg Roelofs</A>.
+      </FONT>
+<!--
+    </TD>
+    <TD ALIGN="right">
+      <FONT SIZE="-1">
+      <A HREF="ftp://ftp.info-zip.org/pub/infozip/">Primary ftp site</A> hosted
+      by <A HREF="http://archiv.leo.org/">LEO</A>.
+ -->
+      <!-- and the  A HREF="http://www.informatik.tu-muenchen.de/home_e.html"
+           Technical University of Munich /A -->
+<!--
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+ -->
+
+</BODY>
+</HTML>

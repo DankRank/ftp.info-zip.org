@@ -1,0 +1,32 @@
+This directory contains ELF executables for Linux libc5 and glibc (libc6),
+Intel only.  The libc5 executables should run fine under most glibc 2.x-based
+distributions.
+
+  1507 May 24 2004  README                what you're reading right now
+147211 Mar  2 2002  unz550x-libc5.tar.gz  UnZip 5.5, Linux/x86 libc5 exes/docs
+164173 Mar  2 2002  unz550x-libc5.zip     UnZip 5.5, Linux/x86 libc5 exes/docs
+142439 May 24 2004  unz551x-glibc.tar.gz  UnZip 5.51, Linux/x86 libc6 exes/docs
+155805 May 24 2004  unz551x-glibc.zip     UnZip 5.51, Linux/x86 libc6 exes/docs
+ 76828 Jan 30 2003  zip23x-glibc.zip      Zip 2.3, Linux libc6 exes (no crypto)
+ 67341 Dec  5 1999  zip23x-libc5.tar.gz   Zip 2.3, Linux libc5 exes (no crypto)
+ 76571 Dec  5 1999  zip23x-libc5.zip      Zip 2.3, Linux libc5 exes (no crypto)
+
+Encryption binaries are only available from our European site,
+ftp://ftp.icce.rug.nl/infozip/UNIX/LINUX/ :
+
+ 99230 Nov  9 1997  zcr22x.zip            Zip 2.2, Linux libc5 exes with crypto
+
+Note that the unz551x-glibc executables have been compiled with large file
+support (i.e., "-DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64").  This should
+allow them to see, test and extract archives larger than 2 GB, even though
+they may run into other problems.  See
+
+	http://ftp.info-zip.org/pub/infozip/FAQ.html#limits
+
+for details.
+
+All Info-ZIP packages contain documentation.  The sources are in ../../src .
+
+Send problem reports on Zip and UnZip to:  http://www.info-zip.org/zip-bug.html
+
+Last updated:  24 May 2004
